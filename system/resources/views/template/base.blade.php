@@ -538,7 +538,7 @@
                 <div class="products">
                   <div class="hot-deal-wrapper">
                     <div class="image">
-                      <a href="#">
+                      <a href="{{url('/template.detail')}}">
                         <img src="{{url('public')}}/assets/images/hot-deals/p13.jpg" alt="">
                         <img src="{{url('public')}}/assets/images/hot-deals/p13_hover.jpg" alt="" class="hover-image">
                       </a>
@@ -736,7 +736,7 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Shirt</a></h3>
                               <div class="rating rateit-small"></div>
                               <div class="product-price"> <span class="price"> $450.99 </span> </div>
                               <!-- /.product-price -->
@@ -764,7 +764,7 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Shirt</a></h3>
                               <div class="rating rateit-small"></div>
                               <div class="product-price"> <span class="price"> $450.99 </span> </div>
                               <!-- /.product-price -->
@@ -796,7 +796,7 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Shirt</a></h3>
                               <div class="rating rateit-small"></div>
                               <div class="product-price"> <span class="price"> $450.99 </span> </div>
                               <!-- /.product-price -->
@@ -1753,7 +1753,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p10.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p10_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -1954,7 +1954,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p2.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p2_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -1967,7 +1967,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -1982,8 +1982,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2002,7 +2002,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p8.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p8_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2015,7 +2015,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2030,8 +2030,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2073,8 +2073,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2141,7 +2141,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p9.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p9_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2154,7 +2154,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Apple Iphone 5s 32GB</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2169,8 +2169,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2211,7 +2211,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2226,8 +2226,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2246,7 +2246,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p11.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p11_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2259,7 +2259,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2274,8 +2274,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2294,7 +2294,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p4.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p4_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2322,8 +2322,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2342,7 +2342,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p1.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p1_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2370,8 +2370,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2390,7 +2390,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p10.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p10_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2403,7 +2403,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2418,8 +2418,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2438,7 +2438,7 @@
                         <div class="product">
                           <div class="product-image">
                             <div class="image">
-                              <a href="detail.html">
+                              <a href="{{url('/template.detail')}}">
                                 <img src="{{url('public')}}/assets/images/products/p6.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p6_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -2451,7 +2451,7 @@
                           <!-- /.product-image -->
 
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="detail.html">Samsung Galaxy S4</a></h3>
+                            <h3 class="name"><a href="{{url('/template.detail')}}">Samsung Galaxy S4</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
                             <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2466,8 +2466,8 @@
                                   <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                   <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                                 </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                               </ul>
                             </div>
                             <!-- /.action -->
@@ -2606,8 +2606,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2626,7 +2626,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="detail.html">
+                            <a href="{{url('/template.detail')}}">
                               <img src="{{url('public')}}/assets/images/products/p15.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p15_hover.jpg" alt="" class="hover-image">
                             </a>
@@ -2639,7 +2639,7 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2654,8 +2654,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2674,7 +2674,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="detail.html">
+                            <a href="{{url('/template.detail')}}">
                               <img src="{{url('public')}}/assets/images/products/p10.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p10_hover.jpg" alt="" class="hover-image">
                             </a>
@@ -2687,7 +2687,7 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2702,8 +2702,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2722,7 +2722,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="detail.html">
+                            <a href="{{url('/template.detail')}}">
                               <img src="{{url('public')}}/assets/images/products/p11.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p11_hover.jpg" alt="" class="hover-image">
                             </a>
@@ -2735,7 +2735,7 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2750,8 +2750,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2770,7 +2770,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="detail.html">
+                            <a href="{{url('/template.detail')}}">
                               <img src="{{url('public')}}/assets/images/products/p8.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p8_hover.jpg" alt="" class="hover-image">
                             </a>
@@ -2783,7 +2783,7 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2798,8 +2798,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2818,7 +2818,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="detail.html">
+                            <a href="{{url('/template.detail')}}">
                               <img src="{{url('public')}}/assets/images/products/p7.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p7_hover.jpg" alt="" class="hover-image">
                             </a>
@@ -2831,7 +2831,7 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> $450.99 </span> <span class="price-before-discount">$ 800</span> </div>
@@ -2846,8 +2846,8 @@
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                               </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
+                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
                             </ul>
                           </div>
                           <!-- /.action -->
@@ -2898,7 +2898,7 @@
                 <div class="item">
                   <div class="blog-post">
                     <div class="blog-post-image">
-                      <div class="image"> <a href="blog.html"><img src="{{url('public')}}/assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="#"><img src="{{url('public')}}/assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
                     </div>
                     <!-- /.blog-post-image -->
 
@@ -2919,7 +2919,7 @@
                 <div class="item">
                   <div class="blog-post">
                     <div class="blog-post-image">
-                      <div class="image"> <a href="blog.html"><img src="{{url('public')}}/assets/images/blog-post/blog_big_03.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="#"><img src="{{url('public')}}/assets/images/blog-post/blog_big_03.jpg" alt=""></a> </div>
                     </div>
                     <!-- /.blog-post-image -->
 

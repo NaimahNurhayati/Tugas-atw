@@ -62,7 +62,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
             <!-- ============================================================= LOGO ============================================================= -->
-            <div class="logo"> <a href="home.html"> <img src="{{url('public')}}/assets/images/logo.png" alt="logo"> </a> </div>
+            <div class="logo"> <a href="{{url('/template')}}"> <img src="{{url('public')}}/assets/images/logo.png" alt="logo"> </a> </div>
             <!-- /.logo -->
             <!-- ============================================================= LOGO : END ============================================================= -->
           </div>
@@ -202,7 +202,7 @@
         <div class='col-xs-12 col-sm-12 col-md-3 sidebar'>
           <div class="sidebar-module-container">
             <div class="home-banner outer-top-n outer-bottom-xs">
-              <img src="{{url('public')}}/assets/images/banners/LHS-banner.jpg" alt="Image">
+              <img src="{{url('public')}}/assets/images/banners/home-banner3.jpg" alt="Image">
             </div>
 
 
@@ -1313,7 +1313,6 @@
             <!-- /.module-body -->
           </div>
           <!-- /.col -->
-
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="module-heading">
               <h4 class="module-title">Corporation</h4>
