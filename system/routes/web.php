@@ -38,3 +38,7 @@ Route::get('/template.login', function () {
 Route::get('/template.produk', function () {
     return view('template.produk');
 });
+
+Route::get('/templateadmin', function () {
+    return view('templateadmin.admin');
+});
