@@ -6,8 +6,10 @@
     <!--logo -->
     <div class="logo">
       <a href="index.html">
-        <h1>NOVUS</h1>
-        <span>AdminPanel</span>
+        <h1>ADMIN</h1>
+        <span>
+          <h6>Fashion Wanita</h6>
+        </span>
       </a>
     </div>
     <!--//logo-->
