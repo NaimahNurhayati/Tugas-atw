@@ -191,7 +191,7 @@
         <ul class="list-inline list-unstyled">
           <li><a href="{{url('/template')}}">Home</a></li>
           <li><a href="{{url('/template.produk')}}">Produk</a></li>
-          <li class='active'>Floral Print Buttoned</li>
+          <li class='active'>Blazze</li>
         </ul>
       </div><!-- /.breadcrumb-inner -->
     </div><!-- /.container -->
@@ -240,9 +240,9 @@
                     <!-- /.hot-deal-wrapper -->
 
                     <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                      <h3 class="name"><a href="{{url('/template.detail')}}">Rok Kasual</a></h3>
                       <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                      <div class="product-price"> <span class="price"> RP 245.000 </span> <span class="price-before-discount">RP 500.000 </span> </div>
                       <!-- /.product-price -->
 
                     </div>
@@ -289,9 +289,9 @@
                     <!-- /.hot-deal-wrapper -->
 
                     <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.produk')}}">Floral Print Buttoned</a></h3>
+                      <h3 class="name"><a href="{{url('/template.detail')}}">Tas Asterik</a></h3>
                       <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                      <div class="product-price"> <span class="price"> Rp 308.000 </span> <span class="price-before-discount">Rp 880.000</span> </div>
                       <!-- /.product-price -->
 
                     </div>
@@ -313,7 +313,7 @@
                   <div class="products">
                     <div class="hot-deal-wrapper">
                       <div class="image">
-                        <a href="#">
+                        <a href="{{url('/template.detail')}}">
                           <img src="{{url('public')}}/assets/images/hot-deals/p15.jpg" alt="">
                           <img src="{{url('public')}}/assets/images/hot-deals/p15_hover.jpg" alt="" class="hover-image">
                         </a>
@@ -338,9 +338,9 @@
                     <!-- /.hot-deal-wrapper -->
 
                     <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.produk')}}">Floral Print Buttoned</a></h3>
+                      <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Maran</a></h3>
                       <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                      <div class="product-price"> <span class="price"> Rp 77.000 </span> <span class="price-before-discount">Rp 220.000</span> </div>
                       <!-- /.product-price -->
 
                     </div>
@@ -363,28 +363,25 @@
             </div>
             <!-- ============================================== HOT DEALS: END ============================================== -->
 
-            <!-- ============================================== NEWSLETTER ============================================== -->
-            <!-- ============================================== NEWSLETTER: END ============================================== -->
-
             <!-- ============================================== Testimonials============================================== -->
             <div class="sidebar-widget  outer-top-vs ">
               <div id="advertisement" class="advertisement">
                 <div class="item">
-                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/member1.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-                  <div class="clients_author">John Doe <span>Abc Company</span> </div><!-- /.container-fluid -->
-                </div><!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/member3.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em>Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-                  <div class="clients_author">Stephen Doe <span>Xperia Designs</span> </div>
+                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/1.jpeg" alt="Image"></div>
+                  <div class="testimonials"><em>"</em> Alhamdulillah barang ku krmn udh sampai. aku suka order dsni soalnya baju2nya ngg nyesalin asli smuanya bagus2 . smoga sukses selalu yah<em>"</em></div>
+                  <div class="clients_author">Sri Rahayu <span>Ketapang</span> </div><!-- /.container-fluid -->
                 </div><!-- /.item -->
 
                 <div class="item">
                   <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/member2.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-                  <div class="clients_author">Saraha Smith <span>Datsun &amp; Co</span> </div><!-- /.container-fluid -->
+                  <div class="testimonials"><em>"</em>Saya pelanggan setia di olshop ini . Sayaaa paling suka sama olshop ini karena memberikan pelayanan terbaik bagi setiap pembeli dalam 1 bulan saya kurang lebih 10 kali berbelanja dlm jumlah yg lumayan meskipun ada sedikit kekecewaan ya you knowla hehe tp saya sungguh takjub. semoga suksesss.<em>"</em></div>
+                  <div class="clients_author">Desti <span>Jakarta</span> </div>
+                </div><!-- /.item -->
+
+                <div class="item">
+                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/2.jpg" alt="Image"></div>
+                  <div class="testimonials"><em>"</em> Barang tidak mengecewakan.. cs nya fast respon, resi besoknya langsung di share tanpa kita tanya.. mantap.<em>"</em></div>
+                  <div class="clients_author">Wulandari<span>Medan</span> </div><!-- /.container-fluid -->
                 </div><!-- /.item -->
 
               </div><!-- /.owl-carousel -->
@@ -527,7 +524,7 @@
               </div><!-- /.gallery-holder -->
               <div class='col-sm-12 col-md-8 col-lg-8 product-info-block'>
                 <div class="product-info">
-                  <h1 class="name">Floral Print Buttoned</h1>
+                  <h1 class="name">Blazze</h1>
 
                   <div class="rating-reviews m-t-20">
                     <div class="row">
@@ -572,8 +569,8 @@
 
                       <div class="col-sm-6 col-xs-6">
                         <div class="price-box">
-                          <span class="price">$800.00</span>
-                          <span class="price-strike">$900.00</span>
+                          <span class="price">Rp 145.000</span>
+                          <span class="price-strike">Rp 245.000</span>
                         </div>
                       </div>
 
@@ -809,14 +806,14 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Set Pakaian</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 79.000 </span>
+                            <span class="price-before-discount">Rp 99.000</span>
 
                           </div><!-- /.product-price -->
 
@@ -865,14 +862,14 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Lengan Panjang</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 59.000 </span>
+                            <span class="price-before-discount">Rp 89.000</span>
 
                           </div><!-- /.product-price -->
 
@@ -921,14 +918,14 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu Kantor</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 100.000 </span>
+                            <span class="price-before-discount">Rp 180.000</span>
 
                           </div><!-- /.product-price -->
 
@@ -977,14 +974,14 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Gelang Bows</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 45.000 </span>
+                            <span class="price-before-discount">Rp 85.000</span>
 
                           </div><!-- /.product-price -->
 
@@ -1033,14 +1030,14 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Dress pink</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 85.000 </span>
+                            <span class="price-before-discount">Rp 99.000</span>
 
                           </div><!-- /.product-price -->
 
@@ -1081,22 +1078,22 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="{{url('/template.detail')}}"><img src="{{url('public')}}/assets/images/blank.gif" data-echo="assets/images/products/p6.jpg" alt=""></a>
+                            <a href="{{url('/template.detail')}}"><img src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/44.jpeg" alt=""></a>
                           </div><!-- /.image -->
 
-                          <div class="tag new"><span>new</span></div>
+                          <div class="tag hot"><span>hot</span></div>
                         </div><!-- /.product-image -->
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Floral Print Buttoned</a></h3>
+                          <h3 class="name"><a href="{{url('/template.detail')}}">Shirt Putih </a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
                           <div class="product-price">
                             <span class="price">
-                              $650.99 </span>
-                            <span class="price-before-discount">$ 800</span>
+                              Rp 75.000 </span>
+                            <span class="price-before-discount">Rp 99.000</span>
 
                           </div><!-- /.product-price -->
 
