@@ -7,9 +7,7 @@
     <div class="logo">
       <a href="index.html">
         <h1>ADMIN</h1>
-        <span>
-          <h6>Fashion Wanita</h6>
-        </span>
+        <span>FashionWanita</span>
       </a>
     </div>
     <!--//logo-->

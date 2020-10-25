@@ -42,3 +42,39 @@ Route::get('/template.produk', function () {
 Route::get('/templateadmin', function () {
     return view('templateadmin.admin');
 });
+
+Route::get('home', function () {
+    return view('home');
+});
+
+Route::get('produk', function () {
+    return view('produk');
+});
+
+Route::get('pakaian', function () {
+    return view('pakaian');
+});
+
+Route::get('aksesoris', function () {
+    return view('aksesoris');
+});
+
+Route::get('kosmetik', function () {
+    return view('kosmetik');
+});
+
+Route::get('hijab', function () {
+    return view('hijab');
+});
+
+Route::get('sepatu', function () {
+    return view('sepatu');
+});
+
+Route::get('flatshoes', function () {
+    return view('flatshoes');
+});
+
+Route::get('promo', function () {
+    return view('promo');
+});
