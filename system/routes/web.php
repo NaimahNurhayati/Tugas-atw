@@ -78,3 +78,7 @@ Route::get('flatshoes', function () {
 Route::get('promo', function () {
     return view('promo');
 });
+
+Route::get('login', function () {
+    return view('login');
+});
