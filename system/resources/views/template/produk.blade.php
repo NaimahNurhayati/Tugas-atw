@@ -44,7 +44,7 @@
           <div class="cnt-account">
             <ul class="list-unstyled">
               <li class="myaccount"><a href="#"><span>My Account</span></a></li>
-              <li class="login"><a href="{{url('/template.login')}}"><span>Login</span></a></li>
+              <li class="login"><a href="{{url('/beranda')}}"><span>Login</span></a></li>
             </ul>
           </div>
         </div>
@@ -163,7 +163,7 @@
               <div class="nav-outer">
                 <ul class="nav navbar-nav">
                   <li class="dropdown"> <a href="{{url('/template')}}">Home</a> </li>
-                  <li class="active dropdown"> <a href="#">Produk</a> </li>
+                  <li class="active dropdown"> <a href="{{url('/template.produk')}}">Produk</a> </li>
                 </ul>
                 <!-- /.navbar-nav -->
                 <div class="clearfix"></div>
@@ -1053,7 +1053,7 @@
                             <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu Brown</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 99.000 </span> <span class="price-before-discount">$ 800</span> </div>
+                            <div class="product-price"> <span class="price"> Rp 99.000 </span> <span class="price-before-discount">Rp 300.000</span> </div>
                             <!-- /.product-price -->
 
                           </div>

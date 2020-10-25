@@ -45,7 +45,7 @@
           <div class="cnt-account">
             <ul class="list-unstyled">
               <li class="myaccount"><a href="#"><span>My Account</span></a></li>
-              <li class="login"><a href="{{url('/template.login')}}"><span>Login</span></a></li>
+              <li class="login"><a href="{{url('/login')}}"><span>Login</span></a></li>
             </ul>
           </div>
           <!-- /.cnt-cart -->

@@ -103,6 +103,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <!--//scrolling js-->
   <!-- Bootstrap Core JavaScript -->
   <script src="{{url('public')}}/assets2/js/bootstrap.js"> </script>
+
 </body>
 
 </html>
