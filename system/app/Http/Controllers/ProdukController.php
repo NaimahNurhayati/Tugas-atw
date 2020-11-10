@@ -5,7 +5,8 @@ use App\Models\produk;
 
 class ProdukController extends Controller{
 	function index(){
-		return view('produk.index');
+		$data['list_produk'] = produk::all();
+		return view('produk.index', $data);
 	}
 
 	function create(){
@@ -24,8 +25,9 @@ class ProdukController extends Controller{
 		return redirect('produk');
 	}
 
-	function show(){
-		
+	function show($produk){
+		$data['produk'] = produk::find($produk);
+		return view('produk.show', $data);
 	}
 
 	function edit(){

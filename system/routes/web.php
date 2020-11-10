@@ -31,6 +31,7 @@ Route::get('beranda', [HomeController::class, 'showBeranda']);
 Route::get('produk', [ProdukController::class, 'index']);
 Route::get('produk/create', [ProdukController::class, 'create']);
 Route::post('produk', [ProdukController::class, 'store']);
+Route::get('produk/{produk}', [ProdukController::class, 'show']);
 
 Route::get('kategori', [HomeController::class, 'showKategori']);
 Route::get('login', [AuthController::class, 'showLogin']);
