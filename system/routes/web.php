@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,48 +21,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/naimah', function () {
-    return "saya naimah";
-});
-
-
-Route::get('/template', function () {
-    return view('template.base');
-});
-
-
-Route::get('/template.detail', function () {
-    return view('template.detail');
-});
-
-Route::get('/template.login', function () {
-    return view('template.login');
-});
-
-Route::get('/template.produk', function () {
-    return view('template.produk');
-});
-
-Route::get('/templateadmin', function () {
-    return view('templateadmin.admin');
-});
-
-Route::get('beranda', function () {
-    return view('beranda');
-});
-
-Route::get('produk', function () {
-    return view('produk');
-});
-
-Route::get('kategori', function () {
-    return view('kategori');
-});
-
-Route::get('login', function () {
-    return view('login');
-});
-
-Route::get('register', function () {
-    return view('register');
-});
+Route::get('template', [TemplateController::class, 'showTemplate']);
+Route::get('template.detail', [TemplateController::class, 'showTemplatedetail']);
+Route::get('template.produk', [TemplateController::class, 'showTemplateproduk']);
+Route::get('template.login', [TemplateController::class, 'showTemplatelogin']);
+Route::get('beranda', [HomeController::class, 'showBeranda']);
+Route::get('produk', [HomeController::class, 'showProduk']);
+Route::get('kategori', [HomeController::class, 'showKategori']);
+Route::get('login', [AuthController::class, 'showLogin']);
+Route::get('register', [AuthController::class, 'showRegister']);
