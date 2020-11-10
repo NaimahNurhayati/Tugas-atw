@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
-
+use App\Http\Controllers\ProdukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,12 @@ Route::get('template.detail', [TemplateController::class, 'showTemplatedetail'])
 Route::get('template.produk', [TemplateController::class, 'showTemplateproduk']);
 Route::get('template.login', [TemplateController::class, 'showTemplatelogin']);
 Route::get('beranda', [HomeController::class, 'showBeranda']);
-Route::get('produk', [HomeController::class, 'showProduk']);
+
+
+Route::get('produk', [ProdukController::class, 'index']);
+Route::get('produk/create', [ProdukController::class, 'create']);
+Route::post('produk', [ProdukController::class, 'store']);
+
 Route::get('kategori', [HomeController::class, 'showKategori']);
 Route::get('login', [AuthController::class, 'showLogin']);
 Route::get('register', [AuthController::class, 'showRegister']);
