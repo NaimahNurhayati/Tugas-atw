@@ -25,17 +25,25 @@ class ProdukController extends Controller{
 		return redirect('produk');
 	}
 
-	function show($produk){
-		$data['produk'] = produk::find($produk);
+	function show(produk $produk){
+		$data['produk'] = $produk;
 		return view('produk.show', $data);
 	}
 
-	function edit(){
-		
+	function edit(produk $produk){
+		$data['produk'] = $produk;
+		return view('produk.edit', $data);
 	}
 
-	function update(){
-		
+	function update(produk $produk){
+		$produk->nama = request('nama');
+		$produk->harga = request('harga');
+		$produk->berat = request('berat');
+		$produk->stok = request('stok');
+		$produk->deskripsi = request('deskripsi');
+		$produk->save();
+
+		return redirect('produk');
 	}
 
 	function destroy(){

@@ -23,6 +23,7 @@
 							<td>{{$loop->iteration}}</td>
 							<td>
 								<a href="{{url('produk', $produk->id)}}" class="btn btn-success"> <i class="fa fa-info"></i></a>
+								<a href="{{url('produk', $produk->id)}}/edit" class="btn btn-warning"> <i class="fa fa-edit"></i></a>
 							</td>
 							<td>{{$produk->nama}}</td>
 							<td>{{$produk->harga}}</td>
