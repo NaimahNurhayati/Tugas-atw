@@ -22,8 +22,11 @@
 						<tr>
 							<td>{{$loop->iteration}}</td>
 							<td>
+								<div class="btn-group">
 								<a href="{{url('produk', $produk->id)}}" class="btn btn-success"> <i class="fa fa-info"></i></a>
 								<a href="{{url('produk', $produk->id)}}/edit" class="btn btn-warning"> <i class="fa fa-edit"></i></a>
+								@include('templateadmin.utils.delete', ['url' => url('produk', $produk->id)])
+							 </div>
 							</td>
 							<td>{{$produk->nama}}</td>
 							<td>{{$produk->harga}}</td>
