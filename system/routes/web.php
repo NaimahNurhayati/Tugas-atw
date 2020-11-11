@@ -34,7 +34,7 @@ Route::post('produk', [ProdukController::class, 'store']);
 Route::get('produk/{produk}', [ProdukController::class, 'show']);
 Route::get('produk/{produk}/edit', [ProdukController::class, 'edit']);
 Route::put('produk/{produk}', [ProdukController::class, 'update']);
-Route::delete('produk/{produk}', [ProdukController::class, 'destroy']);
+
 
 Route::get('kategori', [HomeController::class, 'showKategori']);
 Route::get('login', [AuthController::class, 'showLogin']);

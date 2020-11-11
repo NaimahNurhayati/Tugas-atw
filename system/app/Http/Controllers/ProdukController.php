@@ -22,7 +22,7 @@ class ProdukController extends Controller{
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
-		return redirect('produk')->with('success', 'Data Berhasil Ditambahkan');
+		return redirect('produk');
 	}
 
 	function show(produk $produk){
@@ -43,12 +43,10 @@ class ProdukController extends Controller{
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
-		return redirect('produk')->with('warning', 'Data Berhasil Diedit');
+		return redirect('produk');
 	}
 
-	function destroy(produk $produk){
-		$produk->delete();
-
-		return redirect('produk')->with('danger', 'Data Berhasil Dihapus');
+	function destroy(){
+		
 	}
 }
