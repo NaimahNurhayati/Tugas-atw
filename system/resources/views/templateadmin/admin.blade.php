@@ -69,12 +69,21 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     @include('/templateadmin.section.header')
     <!-- //header-ends -->
     <!-- main content start-->
-    <div id="page-wrapper">
+    <div id="page-wrapper" style="margin-left:270px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            @include('templateadmin.utils.notif')
+          </div>
+        </div>
+      </div>
+
       @yield('content')
     </div>
-    <!--footer-->
-    @include('/templateadmin.section.footer')
-    <!--//footer-->
+  </div>
+  <!--footer-->
+  @include('/templateadmin.section.footer')
+  <!--//footer-->
   </div>
   <!-- Classie -->
   <script src="{{url('public')}}/assets2/js/classie.js"></script>

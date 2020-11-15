@@ -107,7 +107,7 @@ button#showLeftPush {
     text-align: center;
     cursor: pointer;
     float: left;
-    color: #6F6F6F;
+    color: #ffffff;
     -moz-transition: all 0.2s ease-out 0s;
     -webkit-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
@@ -126,12 +126,12 @@ button#showLeftPush:hover {
 }
 
 .cbp-spmenu-vertical {
-    width: 309px;
+    width: 258px;
     height: 100%;
     top: 76px;
     z-index: 1000;
-    background-color: #8d90ff;
-    padding: 2em 0;
+    background-color: #7274dd;
+    padding: 3em 0;
 }
 
 .cbp-spmenu-left {
@@ -139,7 +139,7 @@ button#showLeftPush:hover {
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {
-    left: -309px;
+    left: -300px;
 }
 
 /* Push classes applied to the body */
@@ -186,8 +186,8 @@ button#showLeftPush:hover {
 .nav>li>a:hover,
 .nav>li>a:focus {
     text-decoration: none;
-    background-color: transparent;
-    color: #F2B33F;
+    background-color: #3500c5;
+    color: #ffffff;
 }
 
 .sidebar .arrow {
@@ -213,15 +213,15 @@ span.nav-badge {
     font-size: 12px;
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.32);
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     border-radius: 68%;
     -webkit-border-radius: 68%;
     -moz-border-radius: 68%;
     -o-border-radius: 68%;
     position: absolute;
-    top: 18%;
-    right: 15%;
+    top: 10%;
+    right: 10%;
     line-height: 26px;
     letter-spacing: 1px;
     text-align: center;
@@ -230,7 +230,7 @@ span.nav-badge {
 span.nav-badge-btm {
     font-size: 12px;
     color: #FFF;
-    background: #F2B33F;
+    background: #3500c5;
     position: absolute;
     top: 18%;
     right: 15%;
@@ -265,7 +265,7 @@ ul.dropdown-menu {
 /*--//side-menu--*/
 /* ----Logo----*/
 .logo {
-    background: #9b9dec;
+    background: #7e92ee;
     text-align: center;
     float: left;
 }
@@ -291,102 +291,7 @@ ul.dropdown-menu {
 }
 
 /* ----//Logo----*/
-/*start search*/
-.search-box {
-    float: left;
-    width: 34%;
-    margin: 1.2em 0 0 3em;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-}
 
-.sb-search-input {
-    outline: none;
-    background: #fff;
-    width: 100%;
-    margin: 0;
-    z-index: 10;
-    font-size: 0.9em;
-    color: #6164C1;
-    padding: 0.5em 1em;
-    border: 2px solid rgba(79, 82, 186, 0.3);
-    -webkit-appearance: none;
-    /* for box shadows to show on iOS */
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.sb-search-input::-webkit-input-placeholder {
-    color: #6164C1;
-}
-
-.sb-search-input:-moz-placeholder {
-    color: #6164C1;
-}
-
-.sb-search-input::-moz-placeholder {
-    color: #6164C1;
-}
-
-.sb-search-input:-ms-input-placeholder {
-    color: #6164C1;
-}
-
-.input__label {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.graphic {
-    fill: none;
-    -webkit-transform: scale3d(1, -1, 1);
-    transform: scale3d(1, -1, 1);
-    -webkit-transition: stroke-dashoffset 0.5s;
-    transition: stroke-dashoffset 0.5s;
-    pointer-events: none;
-    stroke: #D81B60;
-    stroke-width: 6px;
-    stroke-dasharray: 962;
-    stroke-dashoffset: 962;
-}
-
-/* Madoka */
-.input__field--madoka {
-    background: transparent;
-    display: block;
-    float: right;
-}
-
-.input__field--madoka:focus {
-    outline: none;
-}
-
-.input__field--madoka:focus+.input__label,
-.input--filled .input__label {
-    cursor: default;
-    pointer-events: none;
-}
-
-.input__field--madoka:focus+.input__label .graphic,
-.input--filled .graphic {
-    stroke-dashoffset: 0;
-}
-
-.input__field--madoka:focus+.input__label .input__label-content {
-    -webkit-transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
-    transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
-}
-
-/*--//search-ends --*/
 /*--- Progress Bar ----*/
 .meter {
     position: relative;
@@ -516,7 +421,7 @@ ul.dropdown-menu li {
 
 .sidebar .nav-second-level li a.active,
 .sidebar ul li a.active {
-    color: #F2B33F;
+    color: #000000;
 }
 
 li.active a i,
@@ -754,7 +659,7 @@ i.icon_6 {
     height: 10px;
     margin: 7px 0;
     overflow: hidden;
-    background: #e1e1e1;
+    background: #ffffff;
     z-index: 1;
     cursor: pointer;
 }
@@ -1168,114 +1073,7 @@ h4.title {
 }
 
 /*--//statistics--*/
-/*--map--*/
-.map {
-    padding: 1em;
-}
 
-/*--//map--*/
-/*--social-media--*/
-.social-media {
-    padding: 0;
-    margin-left: 2%;
-    width: 31.3%;
-}
-
-.wid-social {
-    display: inline-block;
-    width: 33.33%;
-    padding: 15px;
-    float: left;
-    text-align: center;
-}
-
-.facebook {
-    background-color: #3b5998 !important;
-    color: #ffffff !important;
-}
-
-.icon-xlg {
-    font-size: 30px;
-}
-
-.wid-social .social-info h3 {
-    color: rgba(255, 255, 255, 0.91);
-    font-weight: 800;
-    font-size: 1.5em;
-    margin: 0.3em 0;
-}
-
-.wid-social .social-info h4 {
-    margin: 0;
-    font-size: 0.8em;
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.twitter {
-    background-color: #55acee !important;
-    color: #ffffff !important;
-}
-
-.google-plus {
-    background-color: #dc4e41 !important;
-    color: #ffffff !important;
-}
-
-.dribbble {
-    background-color: #ea4c89 !important;
-    color: #ffffff !important;
-}
-
-.xing {
-    background-color: #cfdc00 !important;
-    color: #ffffff !important;
-}
-
-.vimeo {
-    background-color: #162221 !important;
-    color: #ffffff !important;
-}
-
-.yahoo {
-    background-color: #410093 !important;
-    color: #ffffff !important;
-}
-
-.flickr {
-    background-color: #a4c639 !important;
-    color: #ffffff !important;
-}
-
-.rss {
-    background-color: #f26522 !important;
-    color: #ffffff !important;
-}
-
-.wid-social.youtube {
-    width: 100%;
-    background-color: #cd201f !important;
-    color: #ffffff !important;
-}
-
-.wid-social.youtube .icon-xlg {
-    font-size: 38px;
-}
-
-.youtube .social-icon {
-    display: inline-block;
-    margin-right: 6em;
-    vertical-align: super;
-}
-
-.youtube .social-info {
-    display: inline-block;
-}
-
-.wid-social:hover .social-icon {
-    transform: rotatey(360deg);
-    transition: .5s all;
-}
 
 /*--//social-media--*/
 /*--calender --*/

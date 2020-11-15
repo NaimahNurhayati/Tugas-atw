@@ -79,25 +79,29 @@
         </div>
         <div class="hpanel">
           <div class="panel-body">
-            <form action="#" id="loginForm">
+            @include('templateadmin.utils.notif')
+            <form action="{{url('login')}}" method="post">
+              @csrf
               <div class="form-group">
-                <label class="control-label" for="username">Username</label>
-                <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
-                <span class="help-block small">Your unique username to app</span>
+                <label class="control-label" for="email">Email</label>
+                <input type="text" placeholder="example@gmail.com" title="Please enter you email" required="" value="" name="email" id="email" class="form-control">
               </div>
               <div class="form-group">
                 <label class="control-label" for="password">Password</label>
                 <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
-                <span class="help-block small">Yur strong password</span>
               </div>
               <div class="checkbox login-checkbox">
                 <label>
                   <input type="checkbox" class="i-checks"> Remember me </label>
                 <p class="help-block small">(if this is a private computer)</p>
               </div>
-              <a href="{{url('beranda')}}" class="btn btn-success btn-block loginbtn">Login</a>
+              <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+              </div>
 
-              <a class="btn btn-default btn-block" href="{{url('register')}}">Register</a>
+              <div class="col-4">
+                <button type="submit" class="btn btn-default btn-block">Register</button>
+              </div>
             </form>
           </div>
         </div>

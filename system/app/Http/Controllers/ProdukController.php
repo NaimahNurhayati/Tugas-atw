@@ -22,7 +22,7 @@ class ProdukController extends Controller{
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
-		return redirect('produk');
+		return redirect('produk')->with('success', 'Data Berhasil Ditambahkan');
 	}
 
 	function show(produk $produk){
@@ -43,10 +43,24 @@ class ProdukController extends Controller{
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
-		return redirect('produk');
+		return redirect('produk')->with('warning', 'Data Berhasil Diedit');
 	}
 
-	function destroy(){
-		
+	function destroy(produk $produk){
+		$produk->delete();
+
+		return redirect('produk')->with('danger', 'Data Berhasil Dihapus');
+	}
+}
+
+class ClientProdukController extends Controller{
+	function index(){
+		$data['list_produk'] = produk::all();
+		return view('produk.index', $data);
+	}
+
+	function show(produk $produk){
+		$data['produk'] = $produk;
+		return view('produk.show', $data);
 	}
 }

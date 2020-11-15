@@ -54,8 +54,6 @@
       <!-- /.header-top-inner -->
     </div>
     <!-- /.container -->
-    </div>
-    <!-- /.header-top -->
     <!-- ============================================== TOP MENU : END ============================================== -->
     <div class="main-header">
       <div class="container">
@@ -78,12 +76,9 @@
                     <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Categories <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu">
                         <li class="menu-header">Fashion</li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Pakaian</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Kosmetik</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Aksesoris</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Hijab</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Flat Shoes</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Sepatu</a></li>
+                        @foreach($list_kategori as $kategori)
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">{{$kategori->nama_kategori}}</a></li>
+                        @endforeach
                       </ul>
                     </li>
                   </ul>
@@ -98,47 +93,7 @@
           <!-- /.top-search-holder -->
 
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row">
-            <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
 
-            <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
-                <div class="items-cart-inner">
-                  <div class="basket">
-                    <div class="basket-item-count"><span class="count">2</span></div>
-                    <div class="total-price-basket"> <span class="lbl">Shopping Cart</span> <span class="value">$4580</span> </div>
-                  </div>
-                </div>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <div class="cart-item product-summary">
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <div class="image"> <a href="{{url('/template.detail')}}"><img src="{{url('public')}}/assets/images/products/p4.jpg" alt=""></a> </div>
-                      </div>
-                      <div class="col-xs-7">
-                        <h3 class="name"><a href="index8a95.html?page-detail">Simple Product</a></h3>
-                        <div class="price">Rp 350.000</div>
-                      </div>
-                      <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
-                    </div>
-                  </div>
-                  <!-- /.cart-item -->
-                  <div class="clearfix"></div>
-                  <hr>
-                  <div class="clearfix cart-total">
-                    <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>Rp 350.000</span> </div>
-                    <div class="clearfix"></div>
-                    <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a>
-                  </div>
-                  <!-- /.cart-total-->
-
-                </li>
-              </ul>
-              <!-- /.dropdown-menu-->
-            </div>
-            <!-- /.dropdown-cart -->
-
-            <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
           </div>
           <!-- /.top-cart-row -->
         </div>
@@ -191,9 +146,6 @@
       <div class="row">
         <!-- ============================================== SIDEBAR ============================================== -->
         <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
-
-
-
           <!-- ============================================== HOT DEALS ============================================== -->
           <div class="sidebar-widget hot-deals outer-bottom-xs">
             <h3 class="section-title">Hot deals</h3>
@@ -227,7 +179,7 @@
                   <!-- /.hot-deal-wrapper -->
 
                   <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.detail')}}">Rok Kasual</a></h3>
+                    <h3 class="name"><a href="{{url('/template.show,')}}">Rok Kasual</a></h3>
                     <div class="rating rateit-small"></div>
                     <div class="product-price"> <span class="price"> RP 245.000 </span> <span class="price-before-discount">RP 500.000 </span> </div>
                     <!-- /.product-price -->
@@ -276,7 +228,7 @@
                   <!-- /.hot-deal-wrapper -->
 
                   <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.detail')}}">Tas Asterik</a></h3>
+                    <h3 class="name"><a href="{{url('/template.show')}}">Tas Asterik</a></h3>
                     <div class="rating rateit-small"></div>
                     <div class="product-price"> <span class="price"> Rp 308.000 </span> <span class="price-before-discount">Rp 880.000</span> </div>
                     <!-- /.product-price -->
@@ -300,7 +252,7 @@
                 <div class="products">
                   <div class="hot-deal-wrapper">
                     <div class="image">
-                      <a href="{{url('/template.detail')}}">
+                      <a href="{{url('/template.show')}}">
                         <img src="{{url('public')}}/assets/images/hot-deals/p15.jpg" alt="">
                         <img src="{{url('public')}}/assets/images/hot-deals/p15_hover.jpg" alt="" class="hover-image">
                       </a>
@@ -325,7 +277,7 @@
                   <!-- /.hot-deal-wrapper -->
 
                   <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Maran</a></h3>
+                    <h3 class="name"><a href="{{url('/template.show')}}">Kaos Maran</a></h3>
                     <div class="rating rateit-small"></div>
                     <div class="product-price"> <span class="price"> Rp 77.000 </span> <span class="price-before-discount">Rp 220.000</span> </div>
                     <!-- /.product-price -->
@@ -359,11 +311,14 @@
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="{{url('public')}}/assets/images/products/p5.jpg" alt=""> </a> </div>
+                              <div class="image" style="margin-bottom:5px;">
+                                <a href="#"> <img src="{{url('public')}}/assets/images/products/p5.jpg" alt=""> </a>
+                              </div>
                               <!-- /.image -->
 
                             </div>
@@ -372,9 +327,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Gaun Meuii</a></h3>
+                              <h3 class="name"><a href="{{url('/template.show')}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 85.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -384,74 +339,21 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="{{url('public')}}/assets/images/products/p9.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Dress Pio</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 90.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p11.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Dress Long</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 110.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p15.jpg" alt=""> </a> </div>
+                              <div class="image" style="margin-bottom:5px;">
+                                <a href="#"> <img src="{{url('public')}}/assets/images/products/p2.jpg" alt=""> </a>
+                              </div>
                               <!-- /.image -->
 
                             </div>
@@ -460,9 +362,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}"> Kaos Pendek</a></h3>
+                              <h3 class="name"><a href="{{url('/template.detail')}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 55.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -472,74 +374,21 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p13.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Setelan Blei</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 99.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p12.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Hils</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 70.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""> </a> </div>
+                              <div class="image" style="margin-bottom:5px;">
+                                <a href="#"> <img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""> </a>
+                              </div>
                               <!-- /.image -->
 
                             </div>
@@ -548,9 +397,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Setelan Gie</a></h3>
+                              <h3 class="name"><a href="{{url('/template.show')}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 95.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -560,62 +409,7 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="{{url('public')}}/assets/images/products/p3.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu kantor</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> RP 199.000 </span> </div>
-                              <!-- /.product-price -->
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p7.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Kacamata</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 85.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
@@ -645,11 +439,12 @@
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p8.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="{{url('template', $produk->id)}}"> <img src="{{url('public')}}/assets/images/products/p0.jpg" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -658,9 +453,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu Kets Putih</a></h3>
+                              <h3 class="name"><a href="{{url('template', $produk->id)}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 330.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -670,74 +465,19 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p5.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Gaun Mirs</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 210.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p6.jpg" alt="image"> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Shirt</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 160.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p8.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="{{url('template', $produk->id)}}"> <img src="{{url('public')}}/assets/images/products/p8.jpg" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -746,9 +486,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu white</a></h3>
+                              <h3 class="name"><a href="{{url('template', $produk->id)}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 380.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -758,73 +498,19 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p7.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Kaca Mata Hitam</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 185.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p6.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">bee shirt</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 100.000 </span> </div>
-                              <!-- /.product-price -->
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="products special-product">
                     <div class="product">
+                      @foreach($list_produk as $produk)
                       <div class="product-micro">
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p5.jpg" alt="images">
+                              <div class="image"> <a href="{{url('template', $produk->id)}}"> <img src="{{url('public')}}/assets/images/products/p5.jpg" alt="images">
                                   <div class="zoom-overlay"></div>
                                 </a> </div>
                               <!-- /.image -->
@@ -835,9 +521,9 @@
                           <!-- /.col -->
                           <div class="col col-xs-7">
                             <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Gaun Vau</a></h3>
+                              <h3 class="name"><a href="{{url('template', $produk->id)}}">{{$produk->nama}}</a></h3>
                               <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 410.000 </span> </div>
+                              <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> </div>
                               <!-- /.product-price -->
 
                             </div>
@@ -847,65 +533,7 @@
                         <!-- /.product-micro-row -->
                       </div>
                       <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p4.jpg" alt="">
-                                  <div class="zoom-overlay"></div>
-                                </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Dress</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 199.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="{{url('/template.detail')}}"> <img src="{{url('public')}}/assets/images/products/p13.jpg" alt="image"> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="{{url('/template.detail')}}">Rok plits</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> Rp 99.000 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
+                      @endforeach
                     </div>
                   </div>
                 </div>
@@ -928,10 +556,9 @@
               <h3 class="new-product-title pull-left">Produk Terbaru</h3>
               <ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
                 <li class="active"><a data-transition-type="backSlide" href="#all" data-toggle="tab">All</a></li>
-                <li><a data-transition-type="backSlide" href="#pakaian" data-toggle="tab">Pakaian</a></li>
-                <li><a data-transition-type="backSlide" href="#perhiasan" data-toggle="tab">Perhiasan</a></li>
-                <li><a data-transition-type="backSlide" href="#kosmetik" data-toggle="tab">Kosmetik</a></li>
-                <li><a data-transition-type="backSlide" href="#sepatu" data-toggle="tab">Sepatu</a></li>
+                @foreach($list_produk as $produk)
+                <li><a data-transition-type="backSlide" href="#pakaian" data-toggle="tab">{{$produk->nama}}</a></li>
+                @endforeach
               </ul>
               <!-- /.nav-tabs -->
             </div>
@@ -940,11 +567,12 @@
                 <div class="product-slider">
                   <div class="owl-carousel home-owl-carousel custom-carousel owl-theme">
                     <div class="item item-carousel">
-                      <div class="products">
+                      <div class="products" style="display: flex;">
+                        @foreach($list_produk as $produk)
                         <div class="product">
-                          <div class="product-image">
+                          <div class="product-image" style="width: 160px; height:auto; margin: 10px">
                             <div class="image">
-                              <a href="{{url('/template.detail')}}">
+                              <a href="{{url('template', $produk->id)}}">
                                 <img src="{{url('public')}}/assets/images/products/p1.jpg" alt="">
                                 <img src="{{url('public')}}/assets/images/products/p1_hover.jpg" alt="" class="hover-image">
                               </a>
@@ -954,255 +582,18 @@
                             <div class="tag new"><span>new</span></div>
                           </div>
                           <!-- /.product-image -->
-
                           <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Blazze</a></h3>
+                            <h3 class="name"><a href="{{url('/template.show')}}">{{$produk->nama}}</a></h3>
                             <div class="rating rateit-small"></div>
                             <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 145.000 </span> <span class="price-before-discount">$ 800</span> </div>
+                            <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> <span class="price-before-discount">$ 800</span> </div>
                             <!-- /.product-price -->
-
                           </div>
                           <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                                </li>
-                                <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action -->
-                          </div>
                           <!-- /.cart -->
                         </div>
                         <!-- /.product -->
-
-                      </div>
-                      <!-- /.products -->
-                    </div>
-                    <!-- /.item -->
-
-                    <div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image">
-                              <a href="{{url('/template.detail')}}">
-                                <img src="{{url('public')}}/assets/images/products/p4.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p4_hover.jpg" alt="" class="hover-image">
-                              </a>
-                            </div>
-                            <!-- /.image -->
-
-
-                          </div>
-                          <!-- /.product-image -->
-
-                          <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Gelang Bows</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 40.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                            <!-- /.product-price -->
-
-                          </div>
-                          <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                                </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action -->
-                          </div>
-                          <!-- /.cart -->
-                        </div>
-                        <!-- /.product -->
-
-                      </div>
-                      <!-- /.products -->
-                    </div>
-                    <!-- /.item -->
-
-                    <div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image">
-                              <a href="{{url('/template.detail')}}">
-                                <img src="{{url('public')}}/assets/images/products/p3.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p3_hover.jpg" alt="" class="hover-image">
-                              </a>
-                            </div>
-                            <!-- /.image -->
-
-                            <div class="tag sale"><span>sale</span></div>
-                          </div>
-                          <!-- /.product-image -->
-
-                          <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu Brown</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 99.000 </span> <span class="price-before-discount">Rp 300.000</span> </div>
-                            <!-- /.product-price -->
-
-                          </div>
-                          <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                                </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action -->
-                          </div>
-                          <!-- /.cart -->
-                        </div>
-                        <!-- /.product -->
-
-                      </div>
-                      <!-- /.products -->
-                    </div>
-                    <!-- /.item -->
-
-                    <div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image">
-                              <a href="{{url('/template.detail')}}">
-                                <img src="{{url('public')}}/assets/images/products/p2.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p2_hover.jpg" alt="" class="hover-image">
-                              </a>
-                            </div>
-                            <!-- /.image -->
-
-
-                          </div>
-                          <!-- /.product-image -->
-
-                          <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Lengan Panjang</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price"> RP 80.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                            <!-- /.product-price -->
-
-                          </div>
-                          <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                                </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action -->
-                          </div>
-                          <!-- /.cart -->
-                        </div>
-                        <!-- /.product -->
-
-                      </div>
-                      <!-- /.products -->
-                    </div>
-                    <!-- /.item -->
-
-                    <div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image">
-                              <a href="{{url('/template.detail')}}">
-                                <img src="{{url('public')}}/assets/images/products/p6.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p6_hover.jpg" alt="" class="hover-image">
-                              </a>
-                            </div>
-                            <!-- /.image -->
-
-                            <div class="tag hot"><span>hot</span></div>
-                          </div>
-                          <!-- /.product-image -->
-
-                          <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Kaos longres</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 55.000</span> <span class="price-before-discount">$ 800</span> </div>
-                            <!-- /.product-price -->
-
-                          </div>
-                          <!-- /.product-info -->
-                          <div class="cart clearfix animate-effect">
-                            <div class="action">
-                              <ul class="list-unstyled">
-                                <li class="add-cart-button btn-group">
-                                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                                </li>
-                                <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                                <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                              </ul>
-                            </div>
-                            <!-- /.action -->
-                          </div>
-                          <!-- /.cart -->
-                        </div>
-                        <!-- /.product -->
-
-                      </div>
-                      <!-- /.products -->
-                    </div>
-                    <!-- /.item -->
-
-                    <div class="item item-carousel">
-                      <div class="products">
-                        <div class="product">
-                          <div class="product-image">
-                            <div class="image">
-                              <a href="{{url('/template.detail')}}">
-                                <img src="{{url('public')}}/assets/images/products/p5.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p5_hover.jpg" alt="" class="hover-image">
-                              </a>
-                            </div>
-                            <!-- /.image -->
-
-                            <div class="tag new"><span>new</span></div>
-                          </div>
-                          <!-- /.product-image -->
-
-                          <div class="product-info text-left">
-                            <h3 class="name"><a href="{{url('/template.detail')}}">Dress Pink</a></h3>
-                            <div class="rating rateit-small"></div>
-                            <div class="description"></div>
-                            <div class="product-price"> <span class="price"> Rp 79.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                            <!-- /.product-price -->
-
-                          </div>
-                          <!-- /.product-info -->
-
-                        </div>
-                        <!-- /.product -->
-
+                        @endforeach
                       </div>
                       <!-- /.products -->
                     </div>
@@ -1220,33 +611,7 @@
           <!-- /.scroll-tabs -->
           <!-- ============================================== SCROLL TABS : END ============================================== -->
           <!-- ============================================== WIDE PRODUCTS ============================================== -->
-          <div class="wide-banners outer-bottom-xs">
-            <div class="row">
-              <div class="col-md-4 col-sm-4">
-                <div class="wide-banner cnt-strip">
-                  <div class="image"> <img class="img-responsive" src="{{url('public')}}/assets/images/banners/home-banner1.jpg" alt=""> </div>
-                </div>
-                <!-- /.wide-banner -->
-              </div>
 
-              <div class="col-md-4 col-sm-4">
-                <div class="wide-banner cnt-strip">
-                  <div class="image"> <img class="img-responsive" src="{{url('public')}}/assets/images/banners/home-banner3.jpg" alt=""> </div>
-                </div>
-                <!-- /.wide-banner -->
-              </div>
-
-              <!-- /.col -->
-              <div class="col-md-4 col-sm-4">
-                <div class="wide-banner cnt-strip">
-                  <div class="image"> <img class="img-responsive" src="{{url('public')}}/assets/images/banners/home-banner2.jpg" alt=""> </div>
-                </div>
-                <!-- /.wide-banner -->
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>
           <!-- /.wide-banners -->
           <div class="wide-banners outer-bottom-xs">
             <div class="row">
@@ -1289,171 +654,23 @@
               <div class="col-lg-3">
                 <h3 class="section-title">Fashion</h3>
                 <ul class="sub-cat">
-                  <li><a href="#">Pakaian</a></li>
-                  <li><a href="#">Pehiasan</a></li>
-                  <li><a href="#">Aksesoris</a></li>
-                  <li><a href="#">Kosmetik</a></li>
-                  <li><a href="#">Sepatu</a></li>
-                  <li><a href="#">Flat Shoes</a></li>
-                  <li><a href="#">Hijab</a></li>
+                  @foreach($list_produk as $produk)
+                  <li><a href="#">{{$produk->nama}}</a></li>
+                  @endforeach
                 </ul>
               </div>
               <div class="col-lg-9">
                 <div class="owl-carousel homepage-owl-carousel custom-carousel owl-theme outer-top-xs">
-                  <div class="item item-carousel">
+                  <div class="item item-carousel" style="display: flex;">
+                    @foreach($list_produk as $produk)
                     <div class="products">
-                      <div class="product">
+                      <div class="product" style="flex-wrap:nowrap">
                         <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
-                              <img src="{{url('public')}}/assets/images/products/p13.jpg" alt="">
-                              <img src="{{url('public')}}/assets/images/products/p13_hover.jpg" alt="" class="hover-image">
-                            </a>
-
-                          </div>
-                          <!-- /.image -->
-
-                          <div class="tag hot"><span>hot</span></div>
-                        </div>
-                        <!-- /.product-image -->
-
-                        <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Setelan blue</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 95.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                          <!-- /.product-price -->
-
-                        </div>
-                        <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
-                      </div>
-                      <!-- /.product -->
-
-                    </div>
-                    <!-- /.products -->
-                  </div>
-                  <!-- /.item -->
-
-                  <div class="item item-carousel">
-                    <div class="products">
-                      <div class="product">
-                        <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
-                              <img src="{{url('public')}}/assets/images/products/p15.jpg" alt="">
-                              <img src="{{url('public')}}/assets/images/products/p15_hover.jpg" alt="" class="hover-image">
-                            </a>
-
-                          </div>
-                          <!-- /.image -->
-
-                          <div class="tag new"><span>new</span></div>
-                        </div>
-                        <!-- /.product-image -->
-
-                        <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Pendek</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 55.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                          <!-- /.product-price -->
-
-                        </div>
-                        <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
-                      </div>
-                      <!-- /.product -->
-
-                    </div>
-                    <!-- /.products -->
-                  </div>
-                  <!-- /.item -->
-
-                  <div class="item item-carousel">
-                    <div class="products">
-                      <div class="product">
-                        <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
-                              <img src="{{url('public')}}/assets/images/products/p10.jpg" alt="">
-                              <img src="{{url('public')}}/assets/images/products/p10_hover.jpg" alt="" class="hover-image">
-                            </a>
-
-                          </div>
-                          <!-- /.image -->
-
-                          <div class="tag sale"><span>sale</span></div>
-                        </div>
-                        <!-- /.product-image -->
-
-                        <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Topi</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 65.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                          <!-- /.product-price -->
-
-                        </div>
-                        <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
-                      </div>
-                      <!-- /.product -->
-
-                    </div>
-                    <!-- /.products -->
-                  </div>
-                  <!-- /.item -->
-
-                  <div class="item item-carousel">
-                    <div class="products">
-                      <div class="product">
-                        <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
+                          <div class="image" style="width: 150px; height:auto; margin: 2px">
+                            <a href="{{url('template', $produk->id)}}">
                               <img src="{{url('public')}}/assets/images/products/p11.jpg" alt="">
                               <img src="{{url('public')}}/assets/images/products/p11_hover.jpg" alt="" class="hover-image">
                             </a>
-
                           </div>
                           <!-- /.image -->
 
@@ -1462,131 +679,20 @@
                         <!-- /.product-image -->
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Gamis</a></h3>
+                          <h3 class="name"><a href="{{url('template', $produk->id)}}">{{$produk->nama}}</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 150.000 </span> <span class="price-before-discount">$ 800</span> </div>
+                          <div class="product-price"> <span class="price"> Rp {{$produk->harga}}</span> <span class="price-before-discount">Rp 45000</span> </div>
                           <!-- /.product-price -->
+                        </div>
 
-                        </div>
                         <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
                       </div>
                       <!-- /.product -->
 
                     </div>
-                    <!-- /.products -->
+                    <!-- /.products -->@endforeach
                   </div>
-                  <!-- /.item -->
-
-                  <div class="item item-carousel">
-                    <div class="products">
-                      <div class="product">
-                        <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
-                              <img src="{{url('public')}}/assets/images/products/p8.jpg" alt="">
-                              <img src="{{url('public')}}/assets/images/products/p8_hover.jpg" alt="" class="hover-image">
-                            </a>
-
-                          </div>
-                          <!-- /.image -->
-
-                          <div class="tag new"><span>new</span></div>
-                        </div>
-                        <!-- /.product-image -->
-
-                        <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 90.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                          <!-- /.product-price -->
-
-                        </div>
-                        <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
-                      </div>
-                      <!-- /.product -->
-
-                    </div>
-                    <!-- /.products -->
-                  </div>
-                  <!-- /.item -->
-
-                  <div class="item item-carousel">
-                    <div class="products">
-                      <div class="product">
-                        <div class="product-image">
-                          <div class="image">
-                            <a href="{{url('/template.detail')}}">
-                              <img src="{{url('public')}}/assets/images/products/p7.jpg" alt="">
-                              <img src="{{url('public')}}/assets/images/products/p7_hover.jpg" alt="" class="hover-image">
-                            </a>
-
-                          </div>
-                          <!-- /.image -->
-
-                          <div class="tag sale"><span>sale</span></div>
-                        </div>
-                        <!-- /.product-image -->
-
-                        <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Kacamata</a></h3>
-                          <div class="rating rateit-small"></div>
-                          <div class="description"></div>
-                          <div class="product-price"> <span class="price"> Rp 70.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                          <!-- /.product-price -->
-
-                        </div>
-                        <!-- /.product-info -->
-                        <div class="cart clearfix animate-effect">
-                          <div class="action">
-                            <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
-                                <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                              </li>
-                              <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                            </ul>
-                          </div>
-                          <!-- /.action -->
-                        </div>
-                        <!-- /.cart -->
-                      </div>
-                      <!-- /.product -->
-
-                    </div>
-                    <!-- /.products -->
-                  </div>
-                  <!-- /.item -->
                 </div>
               </div>
             </div>
@@ -1713,11 +819,12 @@
             <h3 class="section-title">Produk Unggulan</h3>
             <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
               <div class="item item-carousel">
-                <div class="products">
+                <div class="products" style="display: flex;">
+                  @foreach($list_produk as $produk)
                   <div class="product">
                     <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
+                      <div class="image" style="width: 160px; height:auto; margin: 10px">
+                        <a href="{{url('template', $produk->id)}}">
                           <img src="{{url('public')}}/assets/images/products/p10.jpg" alt="">
                           <img src="{{url('public')}}/assets/images/products/p10_hover.jpg" alt="" class="hover-image">
                         </a>
@@ -1730,271 +837,18 @@
                     <!-- /.product-image -->
 
                     <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Topi Brown</a></h3>
+                      <h3 class="name"><a href="{{url('template', $produk->id)}}">{{$produk->nama}}</a></h3>
                       <div class="rating rateit-small"></div>
                       <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 79.000 </span> <span class="price-before-discount">$ 800</span> </div>
+                      <div class="product-price"> <span class="price"> Rp {{$produk->harga}} </span> <span class="price-before-discount">$ 800</span> </div>
                       <!-- /.product-price -->
 
                     </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
                     <!-- /.cart -->
+
                   </div>
                   <!-- /.product -->
-
-                </div>
-                <!-- /.products -->
-              </div>
-              <!-- /.item -->
-
-              <div class="item item-carousel">
-                <div class="products">
-                  <div class="product">
-                    <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/products/p2.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/products/p2_hover.jpg" alt="" class="hover-image">
-                        </a>
-
-                      </div>
-                      <!-- /.image -->
-
-                      <div class="tag new"><span>new</span></div>
-                    </div>
-                    <!-- /.product-image -->
-
-                    <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Panjang</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 78.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                  <!-- /.product -->
-
-                </div>
-                <!-- /.products -->
-              </div>
-              <!-- /.item -->
-
-              <div class="item item-carousel">
-                <div class="products">
-                  <div class="product">
-                    <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/products/p3.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/products/p3_hover.jpg" alt="" class="hover-image">
-                        </a>
-
-                      </div>
-                      <!-- /.image -->
-
-                      <div class="tag hot"><span>hot</span></div>
-                    </div>
-                    <!-- /.product-image -->
-
-                    <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Sepatu</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 69.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                  <!-- /.product -->
-
-                </div>
-                <!-- /.products -->
-              </div>
-              <!-- /.item -->
-
-              <div class="item item-carousel">
-                <div class="products">
-                  <div class="product">
-                    <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/products/p1.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/products/p1_hover.jpg" alt="" class="hover-image">
-                        </a>
-
-                      </div>
-                      <!-- /.image -->
-
-                      <div class="tag hot"><span>hot</span></div>
-                    </div>
-                    <!-- /.product-image -->
-
-                    <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Setelan Glei</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 99.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                  <!-- /.product -->
-
-                </div>
-                <!-- /.products -->
-              </div>
-              <!-- /.item -->
-
-              <div class="item item-carousel">
-                <div class="products">
-                  <div class="product">
-                    <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/products/p7.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/products/p7_hover.jpg" alt="" class="hover-image">
-                        </a>
-
-                      </div>
-                      <!-- /.image -->
-
-                      <div class="tag sale"><span>sale</span></div>
-                    </div>
-                    <!-- /.product-image -->
-
-                    <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Kacamata</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 75.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                  <!-- /.product -->
-
-                </div>
-                <!-- /.products -->
-              </div>
-              <!-- /.item -->
-
-              <div class="item item-carousel">
-                <div class="products">
-                  <div class="product">
-                    <div class="product-image">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/products/p9.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/products/p9_hover.jpg" alt="" class="hover-image">
-                        </a>
-
-                      </div>
-                      <!-- /.image -->
-
-                      <div class="tag sale"><span>sale</span></div>
-                    </div>
-                    <!-- /.product-image -->
-
-                    <div class="product-info text-left">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Dress</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="description"></div>
-                      <div class="product-price"> <span class="price"> Rp 75.000 </span> <span class="price-before-discount">$ 800</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <ul class="list-unstyled">
-                          <li class="add-cart-button btn-group">
-                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                            <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                          </li>
-                          <li class="lnk wishlist"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                          <li class="lnk"> <a class="add-to-cart" href="{{url('/template.detail')}}" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
-                        </ul>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                  <!-- /.product -->
-
+                  @endforeach
                 </div>
                 <!-- /.products -->
               </div>
@@ -2058,98 +912,7 @@
 
   <!-- ============================================================= FOOTER ============================================================= -->
   <footer id="footer" class="footer color-bg">
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="address-block">
 
-              <!-- /.module-heading -->
-
-              <div class="module-body">
-                <ul class="toggle-footer" style="">
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body">
-                      <p>Indonesia</p>
-                    </div>
-                  </li>
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body">
-                      <p>+628534686xxxx<br>
-                        +628979186xxxx</p>
-                    </div>
-                  </li>
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body"> <span><a href="#">fashionwanita@gmail.com</a></span> </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Customer Service</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a href="#" title="Contact us">My Account</a></li>
-                <li><a href="#" title="About us">Order History</a></li>
-                <li><a href="#" title="faq">FAQ</a></li>
-                <li><a href="#" title="Popular Searches">Specials</a></li>
-                <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Corporation</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a title="Your Account" href="#">About us</a></li>
-                <li><a title="Information" href="#">Customer Service</a></li>
-                <li><a title="Addresses" href="#">Company</a></li>
-                <li><a title="Addresses" href="#">Investor Relations</a></li>
-                <li class="last"><a title="Orders History" href="#">Advanced Search</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Why Choose Us</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a href="#" title="About us">Shopping Guide</a></li>
-                <li><a href="#" title="Blog">Blog</a></li>
-                <li><a href="#" title="Company">Company</a></li>
-                <li><a href="#" title="Investor Relations">Investor Relations</a></li>
-                <li class=" last"><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="copyright-bar">
       <div class="container">
         <div class="col-xs-12 col-sm-4 no-padding social">
@@ -2181,9 +944,6 @@
   </footer>
   <!-- ============================================================= FOOTER : END============================================================= -->
 
-  <!-- For demo purposes – can be removed on production -->
-
-  <!-- For demo purposes – can be removed on production : End -->
 
   <!-- JavaScripts placed at the end of the document so the pages load faster -->
   <script src="{{url('public')}}//assets/js/jquery-1.11.1.min.js"></script>

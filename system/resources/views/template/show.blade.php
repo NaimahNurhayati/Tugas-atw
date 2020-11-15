@@ -78,12 +78,9 @@
                     <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Categories <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu">
                         <li class="menu-header">Fashion</li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Pakaian</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Kosmetik</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Aksesoris</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Hijab</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Flat Shoes</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Sepatu</a></li>
+                        @foreach($list_kategori as $kategori)
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">{{$kategori->nama_kategori}}</a></li>
+                        @endforeach
                       </ul>
                     </li>
                   </ul>
@@ -100,45 +97,6 @@
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row">
             <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
 
-            <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
-                <div class="items-cart-inner">
-                  <div class="basket">
-                    <div class="basket-item-count"><span class="count">2</span></div>
-                    <div class="total-price-basket"> <span class="lbl">Shopping Cart</span> <span class="value">$4580</span> </div>
-                  </div>
-                </div>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <div class="cart-item product-summary">
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <div class="image"> <a href="detail.html"><img src="{{url('public')}}/assets/images/products/p4.jpg" alt=""></a> </div>
-                      </div>
-                      <div class="col-xs-7">
-                        <h3 class="name"><a href="index8a95.html?page-detail">Simple Product</a></h3>
-                        <div class="price">$600.00</div>
-                      </div>
-                      <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
-                    </div>
-                  </div>
-                  <!-- /.cart-item -->
-                  <div class="clearfix"></div>
-                  <hr>
-                  <div class="clearfix cart-total">
-                    <div class="pull-right"> <span class="text">Sub Total :</span><span class='price'>$600.00</span> </div>
-                    <div class="clearfix"></div>
-                    <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a>
-                  </div>
-                  <!-- /.cart-total-->
-
-                </li>
-              </ul>
-              <!-- /.dropdown-menu-->
-            </div>
-            <!-- /.dropdown-cart -->
-
-            <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
           </div>
           <!-- /.top-cart-row -->
         </div>
@@ -204,8 +162,6 @@
             <div class="home-banner outer-top-n outer-bottom-xs">
               <img src="{{url('public')}}/assets/images/banners/home-banner3.jpg" alt="Image">
             </div>
-
-
 
             <!-- ============================================== HOT DEALS ============================================== -->
             <div class="sidebar-widget hot-deals outer-bottom-xs">
@@ -293,7 +249,6 @@
                       <div class="rating rateit-small"></div>
                       <div class="product-price"> <span class="price"> Rp 308.000 </span> <span class="price-before-discount">Rp 880.000</span> </div>
                       <!-- /.product-price -->
-
                     </div>
                     <!-- /.product-info -->
 
@@ -388,9 +343,6 @@
             </div>
 
             <!-- ============================================== Testimonials: END ============================================== -->
-
-
-
           </div>
         </div><!-- /.sidebar -->
         <div class='col-xs-12 col-sm-12 col-md-9 rht-col'>
@@ -516,16 +468,13 @@
                       </div>
                     </div><!-- /#owl-single-product-thumbnails -->
 
-
-
                   </div><!-- /.gallery-thumbs -->
 
                 </div><!-- /.single-product-gallery -->
               </div><!-- /.gallery-holder -->
               <div class='col-sm-12 col-md-8 col-lg-8 product-info-block'>
                 <div class="product-info">
-                  <h1 class="name">Blazze</h1>
-
+                  <h1 class="name">{{$produk->nama}}</h1>
                   <div class="rating-reviews m-t-20">
                     <div class="row">
                       <div class="col-lg-12">
@@ -559,8 +508,9 @@
                   </div><!-- /.stock-container -->
 
                   <div class="description-container m-t-20">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    stok : {{$produk->stok}}
+                    <br>
+                    berat : {{$produk->berat}} gr
                   </div><!-- /.description-container -->
 
                   <div class="price-container info-container m-t-30">
@@ -569,8 +519,8 @@
 
                       <div class="col-sm-6 col-xs-6">
                         <div class="price-box">
-                          <span class="price">Rp 145.000</span>
-                          <span class="price-strike">Rp 245.000</span>
+                          <span class="price">Rp {{number_format($produk->harga)}}</span>
+                          <span class="price-strike">Rp 85.000</span>
                         </div>
                       </div>
 
@@ -594,22 +544,6 @@
                   <div class="quantity-container info-container">
                     <div class="row">
 
-                      <div class="qty">
-                        <span class="label">Qty :</span>
-                      </div>
-
-                      <div class="qty-count">
-                        <div class="cart-quantity">
-                          <div class="quant-input">
-                            <div class="arrows">
-                              <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-                              <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-                            </div>
-                            <input type="text" value="1">
-                          </div>
-                        </div>
-                      </div>
-
                       <div class="add-btn">
                         <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
                       </div>
@@ -617,11 +551,6 @@
 
                     </div><!-- /.row -->
                   </div><!-- /.quantity-container -->
-
-
-
-
-
 
                 </div><!-- /.product-info -->
               </div><!-- /.col-sm-7 -->
@@ -643,7 +572,7 @@
 
                   <div id="description" class="tab-pane in active">
                     <div class="product-tab">
-                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p class="text">{!! nl2br($produk->deskripsi)!!}</p>
                     </div>
                   </div><!-- /.tab-pane -->
 
@@ -798,7 +727,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="{{url('/template.detail')}}"><img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""></a>
+                            <a href="{{url('template', $produk->id)}}"><img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""></a>
                           </div><!-- /.image -->
 
                           <div class="tag sale"><span>sale</span></div>
@@ -806,7 +735,7 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('/template.detail')}}">Set Pakaian</a></h3>
+                          <h3 class="name"><a href="{{url('template', $produk->id)}}">Set Pakaian</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 
@@ -1218,137 +1147,7 @@
     </div><!-- /.container -->
   </div><!-- /.body-content -->
 
-  <!-- ============================================================= FOOTER ============================================================= -->
-
-  <!-- ============================================== INFO BOXES ============================================== -->
-  <div class="row our-features-box">
-    <div class="container">
-      <ul>
-        <li>
-          <div class="feature-box">
-            <div class="icon-truck"></div>
-            <div class="content-blocks">We ship worldwide</div>
-          </div>
-        </li>
-        <li>
-          <div class="feature-box">
-            <div class="icon-support"></div>
-            <div class="content-blocks">call
-              +1 800 789 0000</div>
-          </div>
-        </li>
-        <li>
-          <div class="feature-box">
-            <div class="icon-money"></div>
-            <div class="content-blocks">Money Back Guarantee</div>
-          </div>
-        </li>
-        <li>
-          <div class="feature-box">
-            <div class="icon-return"></div>
-            <div class="content">30 days return</div>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-  <!-- /.info-boxes -->
-  <!-- ============================================== INFO BOXES : END ============================================== -->
-
-  <!-- ============================================================= FOOTER ============================================================= -->
   <footer id="footer" class="footer color-bg">
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="address-block">
-
-              <!-- /.module-heading -->
-
-              <div class="module-body">
-                <ul class="toggle-footer" style="">
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body">
-                      <p>Indonesia</p>
-                    </div>
-                  </li>
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-mobile fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body">
-                      <p>+628534686xxxx<br>
-                        +628979186xxxx</p>
-                    </div>
-                  </li>
-                  <li class="media">
-                    <div class="pull-left"> <span class="icon fa-stack fa-lg"> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> </span> </div>
-                    <div class="media-body"> <span><a href="#">fashionwanita@gmail.com</a></span> </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Customer Service</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a href="#" title="Contact us">My Account</a></li>
-                <li><a href="#" title="About us">Order History</a></li>
-                <li><a href="#" title="faq">FAQ</a></li>
-                <li><a href="#" title="Popular Searches">Specials</a></li>
-                <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Corporation</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a title="Your Account" href="#">About us</a></li>
-                <li><a title="Information" href="#">Customer Service</a></li>
-                <li><a title="Addresses" href="#">Company</a></li>
-                <li><a title="Addresses" href="#">Investor Relations</a></li>
-                <li class="last"><a title="Orders History" href="#">Advanced Search</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="module-heading">
-              <h4 class="module-title">Why Choose Us</h4>
-            </div>
-            <!-- /.module-heading -->
-
-            <div class="module-body">
-              <ul class='list-unstyled'>
-                <li class="first"><a href="#" title="About us">Shopping Guide</a></li>
-                <li><a href="#" title="Blog">Blog</a></li>
-                <li><a href="#" title="Company">Company</a></li>
-                <li><a href="#" title="Investor Relations">Investor Relations</a></li>
-                <li class=" last"><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
-              </ul>
-            </div>
-            <!-- /.module-body -->
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="copyright-bar">
       <div class="container">
         <div class="col-xs-12 col-sm-4 no-padding social">

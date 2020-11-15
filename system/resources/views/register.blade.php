@@ -99,7 +99,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a href="{{url('login')}}" class="btn btn-success loginbtn">Register</a>
+                <a href="{{url('register')}}" class="btn btn-success loginbtn">Register</a>
                 <button class="btn btn-default">Cancel</button>
               </div>
             </form>

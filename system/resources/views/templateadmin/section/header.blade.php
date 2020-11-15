@@ -6,8 +6,8 @@
     <!--logo -->
     <div class="logo">
       <a href="{{url('beranda')}}">
-        <h1>ADMIN</h1>
-        <span>ShopFashionWanita</span>
+        <h1>FASHOLSHOP</h1>
+        <span>Administrator</span>
       </a>
     </div>
     <!--//logo-->
@@ -20,46 +20,6 @@
     <div class="profile_details_left">
       <!--notifications of menu start -->
 
-      <li class="dropdown head-dpdn">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">3</span></a>
-        <ul class="dropdown-menu">
-          <li>
-            <div class="notification_header">
-              <h3>You have 3 new notification</h3>
-            </div>
-          </li>
-          <li><a href="#">
-              <div class="user_img"><img src="{{url('public')}}/assets2/images/2.png" alt=""></div>
-              <div class="notification_desc">
-                <p>Lorem ipsum dolor amet</p>
-                <p><span>1 hour ago</span></p>
-              </div>
-              <div class="clearfix"></div>
-            </a></li>
-          <li class="odd"><a href="#">
-              <div class="user_img"><img src="{{url('public')}}/assets2/images/1.png" alt=""></div>
-              <div class="notification_desc">
-                <p>Lorem ipsum dolor amet </p>
-                <p><span>1 hour ago</span></p>
-              </div>
-              <div class="clearfix"></div>
-            </a></li>
-          <li><a href="#">
-              <div class="user_img"><img src="{{url('public')}}/assets2/images/3.png" alt=""></div>
-              <div class="notification_desc">
-                <p>Lorem ipsum dolor amet </p>
-                <p><span>1 hour ago</span></p>
-              </div>
-              <div class="clearfix"></div>
-            </a></li>
-          <li>
-            <div class="notification_bottom">
-              <a href="#">See all notifications</a>
-            </div>
-          </li>
-        </ul>
-      </li>
-      </ul>
       <div class="clearfix"> </div>
     </div>
     <!--notification menu end -->
@@ -70,7 +30,13 @@
             <div class="profile_img">
               <span class="prfil-img"><img src="{{url('public')}}/assets2/images/a.png" alt=""> </span>
               <div class="user-name">
-                <p>Naimah</p>
+                <p>
+                  @if(Auth::check())
+                  {{request()->user()->nama}}
+                  @else
+                  Silahkan Login
+                  @endif
+                </p>
                 <span>Administrator</span>
               </div>
               <i class="fa fa-angle-down lnr"></i>
@@ -81,7 +47,7 @@
           <ul class="dropdown-menu drp-mnu">
             <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
             <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-            <li> <a href="{{url('/template')}}"><i class="fa fa-sign-out"></i> Logout</a> </li>
+            <li> <a href="{{url('logout')}}"><i class="fa fa-sign-out"></i> Logout</a> </li>
           </ul>
         </li>
       </ul>
