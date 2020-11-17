@@ -2,18 +2,21 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller{
+class HomeController extends Controller
+{
 
-	function showBeranda(){
+	function showBeranda()
+	{
 		return view('beranda');
 	}
 
-	function showProduk(){
+	function showProduk()
+	{
 		return view('produk');
 	}
 
-	function showKategori(){
+	function showKategori()
+	{
 		return view('kategori');
 	}
-
 }

@@ -60,7 +60,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
             <!-- ============================================================= LOGO ============================================================= -->
-            <div class="logo"> <a href="{{url('/template')}}"> <img src="{{url('public')}}/assets/images/logo.png" alt="logo"> </a> </div>
+            <div class="logo"> <a href="{{url('/template')}}"> <img src="{{url('public')}}/assets/images/logo.jpg" alt="logo" style="width: 200px;"> </a> </div>
             <!-- /.logo -->
             <!-- ============================================================= LOGO : END ============================================================= -->
           </div>
@@ -119,6 +119,7 @@
                 <ul class="nav navbar-nav">
                   <li class="dropdown"> <a href="{{url('/template')}}">Home</a> </li>
                   <li class="active dropdown"> <a href="{{url('/template.produk')}}">Produk</a> </li>
+                  <li class="dropdown"> <a href="{{url('/template.promo')}}">Promo</a> </li>
                 </ul>
                 <!-- /.navbar-nav -->
                 <div class="clearfix"></div>
@@ -705,111 +706,45 @@
           <!-- ============================================== BEST SELLER : END ============================================== -->
 
           <!-- ============================================== BLOG SLIDER ============================================== -->
-          <section class="section latest-blog outer-bottom-vs">
-            <h3 class="section-title">Latest form Blog</h3>
-            <div class="blog-slider-container outer-top-xs">
-              <div class="owl-carousel blog-slider custom-carousel">
-                <div class="item">
-                  <div class="blog-post">
-                    <div class="blog-post-image">
-                      <div class="image"> <a href="#"><img src="{{url('public')}}/assets/images/blog-post/blog_big_01.jpg" alt=""></a> </div>
-                    </div>
-                    <!-- /.blog-post-image -->
+          <section class="section new-arriavls">
+            <h3 class="section-title">Kategori Produk</h3>
+            <div class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs">
+              <div class="item item-carousel">
+                <div class="products" style="display: flex;">
+                  @foreach($list_kategori as $kategori)
+                  <div class="product">
+                    <div class="product-image">
+                      <div class="image" style="width: 160px; height:auto; margin: 10px">
+                        <a href="{{url('template', $kategori->id)}}">
+                          <img src="{{url('public')}}/assets/images/products/p7.jpg" alt="">
+                          <img src="{{url('public')}}/assets/images/products/p7_hover.jpg" alt="" class="hover-image">
+                        </a>
 
-                    <div class="blog-post-info text-left">
-                      <h3 class="name"><a href="#">Berbagai Fashion wanita</a></h3>
-                      <span class="info">By Bestqu;|&nbsp; 21 Sep 2020 </span>
-                      <p class="text">Wanita dan fashion, merupakan dua hal yang memang tak bisa dipisahkan. Dengan tampilan fashion yang menawan, wanita dapat merasakan kepercayaan yang tinggi dalam diri mereka. Oleh karena itu sangatlah wajar jika kita melihat wanita selalu memperbaharui tampilan fashion dalam diri mereka, sesuai dengan perkembangan yang ada. Berbagai perubahan dalam dunia fashion wanita pun, kini terus dilakukan oleh para pelaku bisnis mode baik dalam skala nasional maupun internasional. </p>
+                      </div>
+                      <!-- /.image -->
+
+                      <div class="tag new"><span>new</span></div>
                     </div>
-                    <!-- /.blog-post-info -->
+                    <!-- /.product-image -->
+
+                    <div class="product-info text-left">
+                      <h3 class="name"><a href="#">{{$kategori->nama_kategori}}</a></h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="description"></div>
+                      <!-- /.product-price -->
+
+                    </div>
+                    <!-- /.cart -->
 
                   </div>
-                  <!-- /.blog-post -->
+                  <!-- /.product -->
+                  @endforeach
                 </div>
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="blog-post">
-                    <div class="blog-post-image">
-                      <div class="image"> <a href="blog.html"><img src="{{url('public')}}/assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
-                    </div>
-                    <!-- /.blog-post-image -->
-
-                    <div class="blog-post-info text-left">
-                      <h3 class="name"><a href="#">Bucket Bunga</a></h3>
-                      <span class="info">By neklei;|&nbsp; 18 Sep 2020 </span>
-                      <p class="text"> Rangakaian bunga yang indah sering dijadikan hadiah untuk merayakan acara-acara yang membahagiakan. Dari merayakan kelulusan, hari jadi seseorang sampai menyampaikan rasa kasih untuk dia yang tersayang. Itu sebabnya seorang perangkaian bunga sangat dicari karena biasanya pembeli ingin memberikan rangkaian bunga yang disesuaikan dengan kebutuhan pembeli.</p>
-                    </div>
-                    <!-- /.blog-post-info -->
-
-                  </div>
-                  <!-- /.blog-post -->
-                </div>
-                <!-- /.item -->
-
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="blog-post">
-                    <div class="blog-post-image">
-                      <div class="image"> <a href="#"><img src="{{url('public')}}/assets/images/blog-post/blog_big_03.jpg" alt=""></a> </div>
-                    </div>
-                    <!-- /.blog-post-image -->
-
-                    <div class="blog-post-info text-left">
-                      <h3 class="name"><a href="#">Tren Pakaian</a></h3>
-                      <span class="info">By jauan;|&nbsp; 11 Sep 2020 </span>
-                      <p class="text">Trend pakaian sebagian besar didorong oleh perancang busana yang membuat dan menghasilkan pakaian. Dalam hal ini istilah Bisnis Fashion akan digunakan dalam arti bisnis yang berhubungan dengan pakaian modis atau pakaian sebagai industri kreatif yang diciptakan dan diproduksi oleh perancang busana.</p>
-                    </div>
-                    <!-- /.blog-post-info -->
-
-                  </div>
-                  <!-- /.blog-post -->
-                </div>
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="blog-post">
-                    <div class="blog-post-image">
-                      <div class="image"> <a href="#"><img src="{{url('public')}}/assets/images/blog-post/blog_big_01.jpg" alt=""></a> </div>
-                    </div>
-                    <!-- /.blog-post-image -->
-
-                    <div class="blog-post-info text-left">
-                      <h3 class="name"><a href="#">Berbagai Fashion wanita</a></h3>
-                      <span class="info">By Bestqu;|&nbsp; 21 Sep 2020 </span>
-                      <p class="text">Wanita dan fashion, merupakan dua hal yang memang tak bisa dipisahkan. Dengan tampilan fashion yang menawan, wanita dapat merasakan kepercayaan yang tinggi dalam diri mereka. Oleh karena itu sangatlah wajar jika kita melihat wanita selalu memperbaharui tampilan fashion dalam diri mereka, sesuai dengan perkembangan yang ada. Berbagai perubahan dalam dunia fashion wanita pun, kini terus dilakukan oleh para pelaku bisnis mode baik dalam skala nasional maupun internasional. </p>
-                    </div>
-                    <!-- /.blog-post-info -->
-
-                  </div>
-                  <!-- /.blog-post -->
-                </div>
-                <!-- /.item -->
-
-                <div class="item">
-                  <div class="blog-post">
-                    <div class="blog-post-image">
-                      <div class="image"> <a href="blog.html"><img src="{{url('public')}}/assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
-                    </div>
-                    <!-- /.blog-post-image -->
-
-                    <div class="blog-post-info text-left">
-                      <h3 class="name"><a href="#">Bucket Bunga</a></h3>
-                      <span class="info">By neklei;|&nbsp; 18 Sep 2020 </span>
-                      <p class="text"> Rangakaian bunga yang indah sering dijadikan hadiah untuk merayakan acara-acara yang membahagiakan. Dari merayakan kelulusan, hari jadi seseorang sampai menyampaikan rasa kasih untuk dia yang tersayang. Itu sebabnya seorang perangkaian bunga sangat dicari karena biasanya pembeli ingin memberikan rangkaian bunga yang disesuaikan dengan kebutuhan pembeli.</p>
-                    </div>
-                    <!-- /.blog-post-info -->
-
-                  </div>
-                  <!-- /.blog-post -->
-                </div>
-                <!-- /.item -->
-
+                <!-- /.products -->
               </div>
-              <!-- /.owl-carousel -->
+              <!-- /.item -->
             </div>
-            <!-- /.blog-slider-container -->
+            <!-- /.home-owl-carousel -->
           </section>
           <!-- /.section -->
           <!-- ============================================== BLOG SLIDER : END ============================================== -->

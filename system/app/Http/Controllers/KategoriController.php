@@ -55,16 +55,3 @@ class KategoriController extends Controller
 		return redirect('kategori')->with('danger', 'Data Berhasil Dihapus');
 	}
 }
-
-/**
- * 
- */
-class ClientKategori extends Controller
-{
-
-	function index()
-	{
-		$data['list_kategori'] = kategori::all();
-		return view('kategori.index', $data);
-	}
-}

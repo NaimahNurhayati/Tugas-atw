@@ -18,7 +18,10 @@ if(Route::current()-> uri == $route) return 'active';
           <a href="{{url('kategori')}}" class="nav-link {{checkRouteActive('kategori')}}"><i class="fa fa-book nav_icon"></i>Kategori</a>
         </li>
         <li>
-          <a href="{{url('user')}}" class="nav-link {{checkRouteActive('user')}}"><i class="fa fa-user nav_icon"></i>user</a>
+          <a href="{{url('promo')}}" class="nav-link {{checkRouteActive('promo')}}"><i class="fa fa-glass nav_icon"></i>Promo</a>
+        </li>
+        <li>
+          <a href="{{url('user')}}" class="nav-link {{checkRouteActive('user')}}"><i class="fa fa-user nav_icon"></i>User</a>
         </li>
       </ul>
       <!-- //nav-second-level -->

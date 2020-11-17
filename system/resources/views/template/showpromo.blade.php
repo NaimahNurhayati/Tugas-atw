@@ -93,12 +93,6 @@
             <!-- ============================================================= SEARCH AREA : END ============================================================= -->
           </div>
           <!-- /.top-search-holder -->
-
-          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row">
-            <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
-
-          </div>
-          <!-- /.top-cart-row -->
         </div>
         <!-- /.row -->
 
@@ -150,7 +144,7 @@
         <ul class="list-inline list-unstyled">
           <li><a href="{{url('/template')}}">Home</a></li>
           <li><a href="{{url('/template.produk')}}">Produk</a></li>
-          <li class='active'>Blazze</li>
+          <li class='active'>Detail</li>
         </ul>
       </div><!-- /.breadcrumb-inner -->
     </div><!-- /.container -->
@@ -159,194 +153,9 @@
     <div class='container'>
       <div class='row single-product'>
         <div class='col-xs-12 col-sm-12 col-md-3 sidebar'>
-          <div class="sidebar-module-container">
-            <div class="home-banner outer-top-n outer-bottom-xs">
-              <img src="{{url('public')}}/assets/images/banners/home-banner3.jpg" alt="Image">
-            </div>
 
-            <!-- ============================================== HOT DEALS ============================================== -->
-            <div class="sidebar-widget hot-deals outer-bottom-xs">
-              <h3 class="section-title">Hot deals</h3>
-              <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss">
-                <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <a href="#">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p13.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p13_hover.jpg" alt="" class="hover-image">
-                        </a>
-                      </div>
-                      <div class="sale-offer-tag"><span>49%<br>
-                          off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box"> <span class="key">120</span> <span class="value">DAYS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Rok Kasual</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> RP 245.000 </span> <span class="price-before-discount">RP 500.000 </span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </div>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <a href="#">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p14.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p14_hover.jpg" alt="" class="hover-image">
-                        </a>
-                      </div>
-                      <div class="sale-offer-tag"><span>35%<br>
-                          off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box"> <span class="key">120</span> <span class="value">Days</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Tas Asterik</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> Rp 308.000 </span> <span class="price-before-discount">Rp 880.000</span> </div>
-                      <!-- /.product-price -->
-                    </div>
-                    <!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </div>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <a href="{{url('/template.detail')}}">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p15.jpg" alt="">
-                          <img src="{{url('public')}}/assets/images/hot-deals/p15_hover.jpg" alt="" class="hover-image">
-                        </a>
-                      </div>
-                      <div class="sale-offer-tag"><span>35%<br>
-                          off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box"> <span class="key">120</span> <span class="value">Days</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                        </div>
-                        <div class="box-wrapper">
-                          <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="{{url('/template.detail')}}">Kaos Maran</a></h3>
-                      <div class="rating rateit-small"></div>
-                      <div class="product-price"> <span class="price"> Rp 77.000 </span> <span class="price-before-discount">Rp 220.000</span> </div>
-                      <!-- /.product-price -->
-
-                    </div>
-                    <!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                        </div>
-                      </div>
-                      <!-- /.action -->
-                    </div>
-                    <!-- /.cart -->
-                  </div>
-                </div>
-              </div>
-              <!-- /.sidebar-widget -->
-            </div>
-            <!-- ============================================== HOT DEALS: END ============================================== -->
-
-            <!-- ============================================== Testimonials============================================== -->
-            <div class="sidebar-widget  outer-top-vs ">
-              <div id="advertisement" class="advertisement">
-                <div class="item">
-                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/1.jpeg" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Alhamdulillah barang ku krmn udh sampai. aku suka order dsni soalnya baju2nya ngg nyesalin asli smuanya bagus2 . smoga sukses selalu yah<em>"</em></div>
-                  <div class="clients_author">Sri Rahayu <span>Ketapang</span> </div><!-- /.container-fluid -->
-                </div><!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/member2.png" alt="Image"></div>
-                  <div class="testimonials"><em>"</em>Saya pelanggan setia di olshop ini . Sayaaa paling suka sama olshop ini karena memberikan pelayanan terbaik bagi setiap pembeli dalam 1 bulan saya kurang lebih 10 kali berbelanja dlm jumlah yg lumayan meskipun ada sedikit kekecewaan ya you knowla hehe tp saya sungguh takjub. semoga suksesss.<em>"</em></div>
-                  <div class="clients_author">Desti <span>Jakarta</span> </div>
-                </div><!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="{{url('public')}}/assets/images/testimonials/2.jpg" alt="Image"></div>
-                  <div class="testimonials"><em>"</em> Barang tidak mengecewakan.. cs nya fast respon, resi besoknya langsung di share tanpa kita tanya.. mantap.<em>"</em></div>
-                  <div class="clients_author">Wulandari<span>Medan</span> </div><!-- /.container-fluid -->
-                </div><!-- /.item -->
-
-              </div><!-- /.owl-carousel -->
-            </div>
-
-            <!-- ============================================== Testimonials: END ============================================== -->
-          </div>
         </div><!-- /.sidebar -->
-        <div class='col-xs-12 col-sm-12 col-md-9 rht-col'>
+        <div class='col-xs-12 col-sm-12 col-md-9 rht-col' style="margin: 0 0 0 160px;">
           <div class="detail-block">
             <div class="row">
 
@@ -355,127 +164,17 @@
 
                   <div id="owl-single-product">
                     <div class="single-product-gallery-item" id="slide1">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p1.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p1.jpg" />
+                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/diskon.png">
+                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/diskon.png" />
                       </a>
                     </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide2">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p2.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p2.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide3">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p3.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p3.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide4">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p4.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p4.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide5">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p5.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p5.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide6">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p6.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p6.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide7">
-                      <a data-lightbox="image-1" data-title="Gallery" href="assets/images/products/p7.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p7.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide8">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p8.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p8.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
-                    <div class="single-product-gallery-item" id="slide9">
-                      <a data-lightbox="image-1" data-title="Gallery" href="{{url('public')}}/assets/images/products/p9.jpg">
-                        <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p9.jpg" />
-                      </a>
-                    </div><!-- /.single-product-gallery-item -->
-
                   </div><!-- /.single-product-slider -->
-
-
-                  <div class="single-product-gallery-thumbs gallery-thumbs">
-
-                    <div id="owl-single-product-thumbnails">
-                      <div class="item">
-                        <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p1.jpg" />
-                        </a>
-                      </div>
-
-                      <div class="item">
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p2.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p3.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="4" href="#slide4">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p4.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5" href="#slide5">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p5.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6" href="#slide6">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p6.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7" href="#slide7">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p7.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8" href="#slide8">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p8.jpg" />
-                        </a>
-                      </div>
-                      <div class="item">
-
-                        <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9" href="#slide9">
-                          <img class="img-responsive" alt="" src="{{url('public')}}/assets/images/blank.gif" data-echo="{{url('public')}}/assets/images/products/p9.jpg" />
-                        </a>
-                      </div>
-                    </div><!-- /#owl-single-product-thumbnails -->
-
-                  </div><!-- /.gallery-thumbs -->
 
                 </div><!-- /.single-product-gallery -->
               </div><!-- /.gallery-holder -->
               <div class='col-sm-12 col-md-8 col-lg-8 product-info-block'>
                 <div class="product-info">
-                  <h1 class="name">{{$produk->nama}}</h1>
+                  <h1 class="name">{{$promo->nama}}</h1>
                   <div class="rating-reviews m-t-20">
                     <div class="row">
                       <div class="col-lg-12">
@@ -484,7 +183,7 @@
                         </div>
                         <div class="pull-left">
                           <div class="reviews">
-                            <a href="#" class="lnk">(13 Reviews)</a>
+                            <a href="#" class="lnk">(100 Reviews)</a>
                           </div>
                         </div>
                       </div>
@@ -509,9 +208,9 @@
                   </div><!-- /.stock-container -->
 
                   <div class="description-container m-t-20">
-                    stok : {{$produk->stok}}
+                    Jumlah Promo : {{$promo->jumlah}} produk
                     <br>
-                    berat : {{$produk->berat}} gr
+                    Harga Awal : {{$promo->harga_awal}} gr
                   </div><!-- /.description-container -->
 
                   <div class="price-container info-container m-t-30">
@@ -520,8 +219,8 @@
 
                       <div class="col-sm-6 col-xs-6">
                         <div class="price-box">
-                          <span class="price">Rp {{number_format($produk->harga)}}</span>
-                          <span class="price-strike">Rp 85.000</span>
+                          <span class="price">Rp {{number_format($promo->harga_promo)}}</span>
+                          <span class="price-strike">Rp {{number_format($promo->harga_awal)}}</span>
                         </div>
                       </div>
 
@@ -563,7 +262,6 @@
               <div class="col-sm-12 col-md-3 col-lg-3">
                 <ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
                   <li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
-                  <li><a data-toggle="tab" href="#review">REVIEW</a></li>
                   <li><a data-toggle="tab" href="#tags">TAGS</a></li>
                 </ul><!-- /.nav-tabs #product-tabs -->
               </div>
@@ -573,107 +271,8 @@
 
                   <div id="description" class="tab-pane in active">
                     <div class="product-tab">
-                      <p class="text">{!! nl2br($produk->deskripsi)!!}</p>
+                      <p class="text">{!! nl2br($promo->deskripsi)!!}</p>
                     </div>
-                  </div><!-- /.tab-pane -->
-
-                  <div id="review" class="tab-pane">
-                    <div class="product-tab">
-
-                      <div class="product-reviews">
-                        <h4 class="title">Customer Reviews</h4>
-
-                        <div class="reviews">
-                          <div class="review">
-                            <div class="review-title"><span class="summary">We love this product</span><span class="date"><i class="fa fa-calendar"></i><span>1 days ago</span></span></div>
-                            <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam suscipit."</div>
-                          </div>
-
-                        </div><!-- /.reviews -->
-                      </div><!-- /.product-reviews -->
-
-
-
-                      <div class="product-add-review">
-                        <h4 class="title">Write your own review</h4>
-                        <div class="review-table">
-                          <div class="table-responsive">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th class="cell-label">&nbsp;</th>
-                                  <th>1 star</th>
-                                  <th>2 stars</th>
-                                  <th>3 stars</th>
-                                  <th>4 stars</th>
-                                  <th>5 stars</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="cell-label">Quality</td>
-                                  <td><input type="radio" name="quality" class="radio" value="1"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="2"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="3"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="4"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="5"></td>
-                                </tr>
-                                <tr>
-                                  <td class="cell-label">Price</td>
-                                  <td><input type="radio" name="quality" class="radio" value="1"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="2"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="3"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="4"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="5"></td>
-                                </tr>
-                                <tr>
-                                  <td class="cell-label">Value</td>
-                                  <td><input type="radio" name="quality" class="radio" value="1"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="2"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="3"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="4"></td>
-                                  <td><input type="radio" name="quality" class="radio" value="5"></td>
-                                </tr>
-                              </tbody>
-                            </table><!-- /.table .table-bordered -->
-                          </div><!-- /.table-responsive -->
-                        </div><!-- /.review-table -->
-
-                        <div class="review-form">
-                          <div class="form-container">
-                            <form class="cnt-form">
-
-                              <div class="row">
-                                <div class="col-sm-6">
-                                  <div class="form-group">
-                                    <label for="exampleInputName">Your Name <span class="astk">*</span></label>
-                                    <input type="text" class="form-control txt" id="exampleInputName" placeholder="">
-                                  </div><!-- /.form-group -->
-                                  <div class="form-group">
-                                    <label for="exampleInputSummary">Summary <span class="astk">*</span></label>
-                                    <input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
-                                  </div><!-- /.form-group -->
-                                </div>
-
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <label for="exampleInputReview">Review <span class="astk">*</span></label>
-                                    <textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
-                                  </div><!-- /.form-group -->
-                                </div>
-                              </div><!-- /.row -->
-
-                              <div class="action text-right">
-                                <button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
-                              </div><!-- /.action -->
-
-                            </form><!-- /.cnt-form -->
-                          </div><!-- /.form-container -->
-                        </div><!-- /.review-form -->
-
-                      </div><!-- /.product-add-review -->
-
-                    </div><!-- /.product-tab -->
                   </div><!-- /.tab-pane -->
 
                   <div id="tags" class="tab-pane">
@@ -728,7 +327,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image">
-                            <a href="{{url('template', $produk->id)}}"><img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""></a>
+                            <a href="{{url('detail', $promo->id)}}"><img src="{{url('public')}}/assets/images/products/p1.jpg" alt=""></a>
                           </div><!-- /.image -->
 
                           <div class="tag sale"><span>sale</span></div>
@@ -736,7 +335,7 @@
 
 
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{url('template', $produk->id)}}">Set Pakaian</a></h3>
+                          <h3 class="name"><a href="{{url('detail', $promo->id)}}">Set Pakaian</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
 

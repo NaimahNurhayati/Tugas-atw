@@ -43,6 +43,11 @@
         <div class="header-top-inner">
           <div class="cnt-account">
             <ul class="list-unstyled">
+              @if(Auth::check())
+              {{request()->user()->nama}}
+              @else
+              <h4>Silahkan Login</h4>
+              @endif
               <li class="myaccount"><a href="#"><span>My Account</span></a></li>
               <li class="login"><a href="{{url('/login')}}"><span>Login</span></a></li>
             </ul>
@@ -61,7 +66,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
             <!-- ============================================================= LOGO ============================================================= -->
-            <div class="logo"> <a href="{{url('/template')}}"> <img src="{{url('public')}}/assets/images/logo.png" alt="logo"> </a> </div>
+            <div class="logo"> <a href="{{url('/template')}}"> <img src="{{url('public')}}/assets/images/logo.jpg" alt="logo" style="width: 200px;"> </a> </div>
             <!-- /.logo -->
             <!-- ============================================================= LOGO : END ============================================================= -->
           </div>
@@ -122,6 +127,7 @@
                 <ul class="nav navbar-nav">
                   <li class="active dropdown"> <a href="{{url('/template')}}">Home</a> </li>
                   <li class="dropdown"> <a href="{{url('/template.produk')}}">Produk</a> </li>
+                  <li class="dropdown"> <a href="{{url('/template.promo')}}">Promo</a> </li>
                 </ul>
                 <!-- /.navbar-nav -->
                 <div class="clearfix"></div>

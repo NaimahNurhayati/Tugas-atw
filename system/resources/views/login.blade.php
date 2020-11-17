@@ -75,7 +75,7 @@
       <div class="col-md-4 col-md-4 col-sm-4 col-xs-12">
         <div class="text-center m-b-md custom-login">
           <h3>LOGIN</h3>
-          <p>OlShop Fashion Wanita</p>
+          <p>FASHOLSHOP Fashion Wanita</p>
         </div>
         <div class="hpanel">
           <div class="panel-body">
@@ -92,13 +92,13 @@
               </div>
               <div class="checkbox login-checkbox">
                 <label>
-                  <input type="checkbox" class="i-checks"> Remember me </label>
-                <p class="help-block small">(if this is a private computer)</p>
+                  <input type="checkbox" class="i-checks"> ingatkan saya </label>
               </div>
               <div class="col-4">
                 <button type="submit" class="btn btn-primary btn-block">Sign In</button>
               </div>
-
+            </form>
+            <form action="{{url('register')}}" method="post">
               <div class="col-4">
                 <button type="submit" class="btn btn-default btn-block">Register</button>
               </div>
