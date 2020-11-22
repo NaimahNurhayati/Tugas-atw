@@ -98,7 +98,7 @@
                 <button type="submit" class="btn btn-primary btn-block">Sign In</button>
               </div>
             </form>
-            <form action="{{url('register')}}" method="post">
+            <form action="{{url('register')}}">
               <div class="col-4">
                 <button type="submit" class="btn btn-default btn-block">Register</button>
               </div>

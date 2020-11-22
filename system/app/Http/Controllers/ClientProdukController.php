@@ -21,4 +21,22 @@ class ClientProdukController extends Controller
 
 		return view('template.show', $data, $dataa);
 	}
+
+	function filter()
+	{
+		$nama = request('nama');
+		$color = request('color');
+		$size = request('size');
+		$data['harga_min'] = $harga_min = request('harga_min');
+		$data['harga_max'] = $harga_max = request('harga_max');
+		// where untuk menampilkan nama
+		$data['list_produk'] = Produk::where('nama', 'like', "%$nama%")->where('color', [$color])->where('size', [$size])->whereBetween('harga', [$harga_min, $harga_max])->get();
+
+		$data['nama'] = request('nama');
+		$data['color'] = request('color');
+		$data['size'] = request('size');
+		$dataa['list_kategori'] = kategori::all();
+
+		return view('template.produk', $data, $dataa);
+	}
 }

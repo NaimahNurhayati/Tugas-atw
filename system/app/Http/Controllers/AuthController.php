@@ -41,7 +41,7 @@ class AuthController extends Controller
 		$user->email = request('email');
 		$user->password = bcrypt(request('password'));
 		$user->save();
-		return redirect('login')->with('success', 'Register Berhasil, silahkan login');
+		return redirect('beranda')->with('success', 'Register Berhasil, silahkan login');
 	}
 
 	function forgotPassword()

@@ -15,6 +15,10 @@
 			stok : {{$produk->stok}}
 			<br>
 			berat : {{$produk->berat}} gr
+			<br>
+			size : {{$produk->size}}
+			<br>
+			color : {{$produk->color}}
 		</p>
 		<br>
 		<p>

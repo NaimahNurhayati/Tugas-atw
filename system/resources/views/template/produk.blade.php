@@ -11,6 +11,11 @@
   <meta name="robots" content="all">
   <title>Halaman Produk</title>
 
+  <link href="{{url('public')}}/assets4/css/shop.css" type="text/css" rel="stylesheet" media="all">
+  <!-- Range-slider-css -->
+  <link rel="stylesheet" type="text/css" href="{{url('public')}}/assets4/css/jquery-ui1.css">
+  <link href="{{url('public')}}/assets4/css/fontawesome-all.min.css" rel="stylesheet">
+
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="{{url('public')}}/assets/css/bootstrap.min.css">
 
@@ -148,158 +153,54 @@
         <!-- ============================================== SIDEBAR ============================================== -->
         <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
           <!-- ============================================== HOT DEALS ============================================== -->
-          <div class="sidebar-widget hot-deals outer-bottom-xs">
-            <h3 class="section-title">Hot deals</h3>
-            <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss">
-              <div class="item">
-                <div class="products">
-                  <div class="hot-deal-wrapper">
-                    <div class="image">
-                      <a href="#">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p13.jpg" alt="">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p13_hover.jpg" alt="" class="hover-image">
-                      </a>
-                    </div>
-                    <div class="sale-offer-tag"><span>49%<br>
-                        off</span></div>
-                    <div class="timing-wrapper">
-                      <div class="box-wrapper">
-                        <div class="date box"> <span class="key">120</span> <span class="value">DAYS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.hot-deal-wrapper -->
-
-                  <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.show,')}}">Rok Kasual</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> RP 245.000 </span> <span class="price-before-discount">RP 500.000 </span> </div>
-                    <!-- /.product-price -->
-
-                  </div>
-                  <!-- /.product-info -->
-
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                        <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                      </div>
-                    </div>
-                    <!-- /.action -->
-                  </div>
-                  <!-- /.cart -->
+          <div class="side-bar">
+            <!--preference -->
+            <h3 style="padding-left: 5px; padding-right: 10px;">Filter Produk</h3>
+            <form action="{{url('template.produk/filter')}}" method="post">
+              @csrf
+              <div class="left-side">
+                <h3 class="shopf-sear-headits-sear-head">
+                  Nama</h3>
+                <ul>
+                  <li>
+                    <input type="text" class="form-control form-control-sm" name="nama" value="{{$nama ?? ""}}" required>
+                  </li>
+                </ul>
+              </div>
+              <!-- // preference -->
+              <!-- price range -->
+              <div class="range">
+                <h3 class="shopf-sear-headits-sear-head">
+                  <span>Price</span> range</h3>
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault01">Min</label>
+                  <input type="text" class="form-control" name="harga_min" placeholder="20000" value="{{$harga_min ?? ""}}" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault02">Max</label>
+                  <input type="text" class="form-control" name="harga_max" placeholder="100000" value="{{$harga_max ?? ""}}" required>
                 </div>
               </div>
-              <div class="item">
-                <div class="products">
-                  <div class="hot-deal-wrapper">
-                    <div class="image">
-                      <a href="#">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p14.jpg" alt="">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p14_hover.jpg" alt="" class="hover-image">
-                      </a>
-                    </div>
-                    <div class="sale-offer-tag"><span>35%<br>
-                        off</span></div>
-                    <div class="timing-wrapper">
-                      <div class="box-wrapper">
-                        <div class="date box"> <span class="key">120</span> <span class="value">Days</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.hot-deal-wrapper -->
-
-                  <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.show')}}">Tas Asterik</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> Rp 308.000 </span> <span class="price-before-discount">Rp 880.000</span> </div>
-                    <!-- /.product-price -->
-
-                  </div>
-                  <!-- /.product-info -->
-
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                        <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                      </div>
-                    </div>
-                    <!-- /.action -->
-                  </div>
-                  <!-- /.cart -->
-                </div>
+              <!-- //price range -->
+              <br> <br>
+              <div class="left-side">
+                <h3 class="shopf-sear-headits-sear-head">Size</h3>
+                <ul>
+                  <li>
+                    <input type="text" class="form-control form-control-sm" name="size" value="{{$size ?? ""}}">
+                  </li>
+                </ul>
               </div>
-              <div class="item">
-                <div class="products">
-                  <div class="hot-deal-wrapper">
-                    <div class="image">
-                      <a href="{{url('/template.show')}}">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p15.jpg" alt="">
-                        <img src="{{url('public')}}/assets/images/hot-deals/p15_hover.jpg" alt="" class="hover-image">
-                      </a>
-                    </div>
-                    <div class="sale-offer-tag"><span>35%<br>
-                        off</span></div>
-                    <div class="timing-wrapper">
-                      <div class="box-wrapper">
-                        <div class="date box"> <span class="key">120</span> <span class="value">Days</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="hour box"> <span class="key">20</span> <span class="value">HRS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="minutes box"> <span class="key">36</span> <span class="value">MINS</span> </div>
-                      </div>
-                      <div class="box-wrapper">
-                        <div class="seconds box"> <span class="key">60</span> <span class="value">SEC</span> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.hot-deal-wrapper -->
-
-                  <div class="product-info text-left m-t-20">
-                    <h3 class="name"><a href="{{url('/template.show')}}">Kaos Maran</a></h3>
-                    <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> Rp 77.000 </span> <span class="price-before-discount">Rp 220.000</span> </div>
-                    <!-- /.product-price -->
-
-                  </div>
-                  <!-- /.product-info -->
-
-                  <div class="cart clearfix animate-effect">
-                    <div class="action">
-                      <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                        <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                      </div>
-                    </div>
-                    <!-- /.action -->
-                  </div>
-                  <!-- /.cart -->
-                </div>
+              <div class="left-side">
+                <h3 class="shopf-sear-headits-sear-head">Color</h3>
+                <ul>
+                  <li>
+                    <input type="text" class="form-control form-control-sm" name="color" value="{{$color ?? ""}}">
+                  </li>
+                </ul>
               </div>
-            </div>
-            <!-- /.sidebar-widget -->
+              <button class="btn btn-primary float-right"><i class="fa fa-search"></i>Cari Data</button>
+            </form>
           </div>
           <!-- ============================================== HOT DEALS: END ============================================== -->
 
@@ -420,17 +321,6 @@
           </div>
           <!-- /.sidebar-widget -->
           <!-- ============================================== SPECIAL OFFER : END ============================================== -->
-          <!-- ============================================== PRODUCT TAGS ============================================== -->
-          <div class="sidebar-widget product-tag">
-            <h3 class="section-title">Label Produk</h3>
-            <div class="sidebar-widget-body outer-top-xs">
-              <div class="tag-list"> <a class="item" title="Sepatu" href="#">Sepatu</a> <a class="item active" title="Pakaian" href="category.html">Pakaian</a> <a class="item" title="Aksesoris" href="category.html">Aksesoris</a> <a class="item" title="Flatshoes" href="category.html">Flat Shoes</a> <a class="item" title="T-shirt" href="category.html">T-shirt</a> <a class="item" title="Hijab" href="category.html">Hijab</a> <a class="item" title="Sepatu" href="category.html">Sepatu</a> <a class="item" title="Gamis" href="category.html">Gamis</a> <a class="item" title="Kosmetik" href="category.html">Kosmetik</a> </div>
-              <!-- /.tag-list -->
-            </div>
-            <!-- /.sidebar-widget-body -->
-          </div>
-          <!-- /.sidebar-widget -->
-          <!-- ============================================== PRODUCT TAGS : END ============================================== -->
           <!-- ============================================== SPECIAL DEALS ============================================== -->
 
           <div class="sidebar-widget outer-bottom-small">

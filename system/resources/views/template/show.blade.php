@@ -512,6 +512,10 @@
                     stok : {{$produk->stok}}
                     <br>
                     berat : {{$produk->berat}} gr
+                    <br>
+                    Size : {{$produk->size}}
+                    <br>
+                    color : {{$produk->color}}
                   </div><!-- /.description-container -->
 
                   <div class="price-container info-container m-t-30">

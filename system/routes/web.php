@@ -33,6 +33,7 @@ Route::get('kategori', [HomeController::class, 'showKategori']);
 
 // produk
 Route::resource('produk', ProdukController::class);
+Route::post('produk/filter', [ProdukController::class, 'filter']);
 // akhir produk
 
 // kategori
@@ -54,6 +55,8 @@ Route::get('template', [ClientKategoriController::class, 'showTemplate']);
 // clientproduk
 Route::get('template.produk', [ClientProdukController::class, 'showTemplateproduk']);
 Route::get('template/{produk}', [ClientProdukController::class, 'show']);
+Route::post('template/filter', [ClientProdukController::class, 'filter']);
+Route::post('template.produk/filter', [ClientProdukController::class, 'filter']);
 // akhir clientproduk
 
 // client promo
