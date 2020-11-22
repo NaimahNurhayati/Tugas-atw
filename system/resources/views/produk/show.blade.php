@@ -10,17 +10,19 @@
 		<h3>{{$produk->nama}}</h3>
 		<hr size="10">
 		<p>
-			Harga Rp. {{number_format($produk->harga)}}
+			Harga Rp. {{number_format($produk->harga)}} |
 			<br>
-			stok : {{$produk->stok}}
+			stok : {{$produk->stok}} |
 			<br>
-			berat : {{$produk->berat}} gr
+			berat : {{$produk->berat}} gr |
 			<br>
-			size : {{$produk->size}}
+			size : {{$produk->size}} |
 			<br>
-			color : {{$produk->color}}
+			color : {{$produk->color}} |
+			<br>
+			Seller : {{$produk->seller->nama}}
 		</p>
-		<br>
+		<hr>
 		<p>
 			{!! nl2br($produk->deskripsi)!!}
 		</p>

@@ -8,6 +8,7 @@
   </div>
   <div class="card-body">
     <h3>Kategori {{$kategori->nama_kategori}}</h3>
+    Seller :{{$kategori->seller->nama}}
     <hr>
 
     <p>

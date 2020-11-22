@@ -8,7 +8,8 @@ class KategoriController extends Controller
 {
 	function index()
 	{
-		$data['list_kategori'] = kategori::all();
+		$user = request()->user();
+		$data['list_kategori'] = $user->kategori;
 		return view('kategori.index', $data);
 	}
 
@@ -20,6 +21,7 @@ class KategoriController extends Controller
 	function store()
 	{
 		$kategori = new kategori;
+		$kategori->id_user = request()->user()->id;
 		$kategori->nama_kategori = request('nama_kategori');
 		$kategori->deskripsi = request('deskripsi');
 		$kategori->save();
