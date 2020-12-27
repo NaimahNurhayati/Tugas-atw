@@ -29,4 +29,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Kategori::class, 'id_user');
     }
+
+    function getJenisKelaminStringAttribute(){
+        return ($this->jenis_kelamin == 1) ? "Laki-Laki" : "Perempuan";
+    }
 }

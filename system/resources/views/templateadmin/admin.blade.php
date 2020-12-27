@@ -77,7 +77,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
           </div>
         </div>
       </div>
-
       @yield('content')
     </div>
   </div>
