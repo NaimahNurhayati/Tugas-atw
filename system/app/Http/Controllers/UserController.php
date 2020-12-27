@@ -22,9 +22,10 @@ class UserController extends Controller
 	{
 		$user = new user;
 		$user->nama = request('nama');
+		$user->jenis_kelamin = 1;
 		$user->username = request('username');
 		$user->email = request('email');
-		$user->password = bcrypt(request('password'));
+		$user->password = request('password');
 		$user->save();
 
 		$userDetail = new Userdetail;
