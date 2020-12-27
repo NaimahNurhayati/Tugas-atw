@@ -22,7 +22,7 @@
 			<br>
 			Seller : {{$produk->seller->nama}}
 			<br>
-			Tanggal produksi : {{$produk->tanggalproduksi}}
+			Tanggal produksi : {{$produk->created_at->diffforHumans()}}
 		</p>
 		<hr>
 		<p>
