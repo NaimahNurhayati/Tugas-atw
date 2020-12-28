@@ -9,7 +9,8 @@ class produk extends Model
 	protected $table = 'produk';
 
 	protected $casts = [
-		'created_at' => 'datetime'
+		'created_at' => 'datetime',
+		'berat' => 'decimal:2',
 	];
 
 	function seller()
@@ -18,7 +19,7 @@ class produk extends Model
 	}
 
 	function getHargaAttribute(){
-		return "Harga Rp. ".number_format($this->attributes['harga']); 
+		return "Rp. ".number_format($this->attributes['harga']); 
 	}
 
 	// function getTanggalProduksiAttribute(){

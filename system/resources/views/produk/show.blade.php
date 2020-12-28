@@ -10,11 +10,11 @@
 		<h3>{{$produk->nama}}</h3>
 		<hr size="10">
 		<p>
-			{{$produk->harga}} |
+			Harga : {{$produk->harga}} |
 			<br>
 			stok : {{$produk->stok}} |
 			<br>
-			berat : {{$produk->berat}} gr |
+			berat : {{$produk->berat}} kg |
 			<br>
 			size : {{$produk->size}} |
 			<br>
