@@ -31,6 +31,8 @@ class ProdukController extends Controller
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
+		$produk->handleUploadFoto();
+
 		return redirect('produk')->with('success', 'Data Berhasil Ditambahkan');
 	}
 
@@ -54,6 +56,7 @@ class ProdukController extends Controller
 		$produk->size = request('size');
 		$produk->color = request('color');
 		$produk->stok = request('stok');
+		$produk->foto = request('foto');
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 

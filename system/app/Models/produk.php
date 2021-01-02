@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\User;
+use Illuminate\Support\Str;
 
 class produk extends Model
 {
@@ -26,4 +27,16 @@ class produk extends Model
 	// 	$tanggal = $this->created_at;
 	// 	return strftime("%d %b %y", strtotime($this->created_at));
 	// }
+
+	function handleUploadFoto(){
+		if(request()->hasFile('foto')){
+			$foto = request()->file('foto');
+			$destination = "images/produk";
+			$randomStr = Str::random(5);
+			$filename = $this->id."-".time()."-".$randomStr.".".$foto->extension();
+			$url = $foto->storeAs($destination, $filename);
+			$this->foto = "app/".$url;
+			$this->save();
+		}
+	}
 }

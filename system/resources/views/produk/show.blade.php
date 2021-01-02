@@ -23,6 +23,7 @@
 			Seller : {{$produk->seller->nama}}
 			<br>
 			Tanggal produksi : {{$produk->created_at->diffforHumans()}}
+			<img src="{{url("public",$produk->foto)}}" alt="">
 		</p>
 		<hr>
 		<p>

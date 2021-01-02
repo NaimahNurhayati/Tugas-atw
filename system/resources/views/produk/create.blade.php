@@ -6,7 +6,7 @@
 	<div class="container-fluid">
 		<h3 style="text-align: center;">Tambah Data Produk</h3>
 	</div>
-	<form action="{{url('produk')}}" method="post">
+	<form action="{{url('produk')}}" method="post" enctype="multipart/form-data">
 		@csrf
 		<div class="card-body">
 			<div class="form-group">
@@ -37,16 +37,22 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="form-group">
 						<label for="" class="control-label"> Size</label>
 						<input type="text" class="form-control" name="size">
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<div class="form-group">
 						<label for="" class="control-label"> Color</label>
 						<input type="text" class="form-control" name="color">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="" class="control-label"> Foto</label>
+						<input type="file" class="form-control" name="foto" accept=".jpg">
 					</div>
 				</div>
 			</div>
