@@ -498,6 +498,10 @@
 
             </div>
             <!-- /.tab-content -->
+            <br>
+          <div class="ml-auto text-center">
+            {!! $list_produk->links() !!}
+          </div>
           </div>
           <!-- /.scroll-tabs -->
           <!-- ============================================== SCROLL TABS : END ============================================== -->
@@ -588,6 +592,9 @@
               </div>
             </div>
             <!-- /.home-owl-carousel -->
+            <div class="ml-auto text-center">
+            {!! $list_produk->links() !!}
+          </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
@@ -635,6 +642,9 @@
               <!-- /.item -->
             </div>
             <!-- /.home-owl-carousel -->
+            <div class="ml-auto text-center">
+            {!! $list_produk->links() !!}
+          </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== BLOG SLIDER : END ============================================== -->
@@ -680,6 +690,9 @@
               <!-- /.item -->
             </div>
             <!-- /.home-owl-carousel -->
+            <div class="ml-auto text-center">
+            {!! $list_produk->links() !!}
+          </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->

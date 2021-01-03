@@ -10,7 +10,7 @@ class ClientProdukController extends Controller
 	function showTemplateproduk()
 	{
 		$data['list_kategori'] = kategori::all();
-		$dataa['list_produk'] = produk::all();
+		$dataa['list_produk'] = produk::paginate(5);
 		return view('template.produk', $data, $dataa);
 	}
 

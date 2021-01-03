@@ -351,7 +351,6 @@
                 <!-- /.product-slider -->
               </div>
               <!-- /.tab-pane -->
-
             </div>
             <!-- /.tab-content -->
           </div>

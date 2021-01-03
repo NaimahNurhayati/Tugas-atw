@@ -26,7 +26,7 @@
     <div class="profile_details">
       <ul>
         <li class="dropdown profile_details_drop">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <a href="{{url('logout')}}" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <div class="profile_img">
               <span class="prfil-img"><img src="{{url('public')}}/assets2/images/a.png" alt=""> </span>
               <div class="user-name">
@@ -37,7 +37,7 @@
                   Silahkan Login
                   @endif
                 </p>
-                <span>Administrator</span>
+                <span>Log Out</span>
               </div>
               <i class="fa fa-angle-down lnr"></i>
               <i class="fa fa-angle-up lnr"></i>
