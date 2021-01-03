@@ -36,6 +36,8 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <!--webfonts-->
   <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <!--//webfonts-->
+  <!-- include summernote css/js -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
   <!--animate-->
   <link href="{{url('public')}}/assets2/css/animate.css" rel="stylesheet" type="text/css" media="all">
   <script src="{{url('public')}}/assets2/js/wow.min.js"></script>
@@ -58,6 +60,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <script src="{{url('public')}}/assets2/js/custom.js"></script>
   <link href="{{url('public')}}/assets2/css/custom.css" rel="stylesheet">
   <!--//Metis Menu -->
+   <!-- DataTables -->
+  <link rel="stylesheet" href="{{url('public')}}/assets1/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="{{url('public')}}/assets1/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  @stack('style')
+
 </head>
 
 <body class="cbp-spmenu-push">
@@ -84,33 +91,42 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   @include('/templateadmin.section.footer')
   <!--//footer-->
   </div>
-  <!-- Classie -->
-  <script src="{{url('public')}}/assets2/js/classie.js"></script>
+
+  <!-- jQuery -->
+  <script src="{{url('public')}}/assets1/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="{{url('public')}}/assets1/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="{{url('public')}}/assets1/dist/js/adminlte.min.js"></script>
+  
+  <!-- Data Tables -->
+  <script src="{{url('public')}}/assets1/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="{{url('public')}}/assets1/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="{{url('public')}}/assets1/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="{{url('public')}}/assets1/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="{{url('public')}}/assets1/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+@stack('script')
   <script>
-    var menuLeft = document.getElementById('cbp-spmenu-s1'),
-      showLeftPush = document.getElementById('showLeftPush'),
-      body = document.body;
+    $(function() {
+      $("#example1").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
 
-    showLeftPush.onclick = function() {
-      classie.toggle(this, 'active');
-      classie.toggle(body, 'cbp-spmenu-push-toright');
-      classie.toggle(menuLeft, 'cbp-spmenu-open');
-      disableOther('showLeftPush');
-    };
-
-
-    function disableOther(button) {
-      if (button !== 'showLeftPush') {
-        classie.toggle(showLeftPush, 'disabled');
-      }
-    }
+    $(document).ready(function() {
+      $('#deskripsi').summernote();
+    });
   </script>
-  <!--scrolling js-->
-  <script src="{{url('public')}}/assets2/js/jquery.nicescroll.js"></script>
-  <script src="{{url('public')}}/assets2/js/scripts.js"></script>
-  <!--//scrolling js-->
-  <!-- Bootstrap Core JavaScript -->
-  <script src="{{url('public')}}/assets2/js/bootstrap.js"> </script>
 
 </body>
 

@@ -44,8 +44,8 @@
 		<div class="card-header">
 			<a href="{{url('produk/create')}}" class="btn btn-primary float-right"><i class="fa fa-plus"></i>Tambah Data</a>
 		</div>
-		<div class="card-body">
-			<table class="table">
+		<div class="card-body table_datatable">
+          <table id="example1" class="table table-bordered table-striped">
 				<thead>
 					<th>No</th>
 					<th>Aksi</th>
