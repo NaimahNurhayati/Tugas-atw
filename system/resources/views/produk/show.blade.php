@@ -2,7 +2,6 @@
 
 @section('content')
 
-<div class="product-status mg-tb-15" style="height: 430px">
 	<div class="container-fluid">
 		<h3 style="text-align: center;">Detail Data Produk</h3>
 	</div>
@@ -14,12 +13,11 @@
 		</p>
 		<hr>
 		<p>
-			{!! nl2br($produk->deskripsi)!!}
+			Deskripsi Produk: {!! nl2br($produk->deskripsi)!!}
 		</p>
 	</div>
 
 	</form>
-</div>
 </div>
 
 @endsection

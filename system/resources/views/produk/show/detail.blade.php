@@ -10,5 +10,6 @@ Harga : {{$produk->harga}} |
 			<br>
 			Seller : {{$produk->seller->nama}}
 			<br>
-			Tanggal produksi : {{$produk->created_at->diffforHumans()}}
-			<img src="{{url("public",$produk->foto)}}" alt="">
+			Tanggal produksi : {{$produk->created_at->diffforHumans()}}<br>
+			Gambar produk:
+			<img style="width: 320px" src="{{url("public/$produk->foto")}}" alt="">

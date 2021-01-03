@@ -56,15 +56,16 @@ class ProdukController extends Controller
 		$produk->size = request('size');
 		$produk->color = request('color');
 		$produk->stok = request('stok');
-		$produk->foto = request('foto');
 		$produk->deskripsi = request('deskripsi');
 		$produk->save();
 
+		$produk->handleUploadFoto();
 		return redirect('produk')->with('warning', 'Data Berhasil Diedit');
 	}
 
 	function destroy(produk $produk)
 	{
+		$produk->handleDelete();
 		$produk->delete();
 
 		return redirect('produk')->with('danger', 'Data Berhasil Dihapus');
