@@ -28,6 +28,8 @@ Route::get('/', function () {
 });
 
 Route::get('template.login', [TemplateController::class, 'showTemplatelogin']);
+Route::get('template.chekout', [TemplateController::class, 'showChekout']);
+Route::get('template.card', [TemplateController::class, 'showCard']);
 Route::get('beranda', [HomeController::class, 'showBeranda']);
 Route::get('kategori', [HomeController::class, 'showKategori']);
 
@@ -70,3 +72,5 @@ Route::post('login', [AuthController::class, 'loginprocess']);
 Route::get('logout', [AuthController::class, 'logout']);
 Route::get('register', [AuthController::class, 'showRegister']);
 Route::post('register', [AuthController::class, 'storeRegister']);
+
+Route::get('test-ajax', [HomeController::class, 'testAjax']);

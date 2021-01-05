@@ -141,7 +141,6 @@
     </div>
     <!-- /.header-nav -->
     <!-- ============================================== NAVBAR : END ============================================== -->
-
   </header>
   <!-- ============================================== HEADER : END ============================================== -->
   <div class="breadcrumb">
@@ -209,7 +208,7 @@
                       <div class="action">
                         <div class="add-cart-button btn-group">
                           <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                          <button class="btn btn-primary cart-btn" type="button">Add to Card</button>
                         </div>
                       </div>
                       <!-- /.action -->
@@ -257,7 +256,7 @@
                       <div class="action">
                         <div class="add-cart-button btn-group">
                           <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                          <button class="btn btn-primary cart-btn" type="button">Add To Card</button>
                         </div>
                       </div>
                       <!-- /.action -->
@@ -306,7 +305,7 @@
                       <div class="action">
                         <div class="add-cart-button btn-group">
                           <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                          <button class="btn btn-primary cart-btn" type="button">Add To Card</button>
                         </div>
                       </div>
                       <!-- /.action -->
@@ -524,7 +523,7 @@
 
                       <div class="col-sm-6 col-xs-6">
                         <div class="price-box">
-                          <span class="price">Rp {{number_format($produk->harga)}}</span>
+                          <span class="price">Rp {{($produk->harga)}}</span>
                           <span class="price-strike">Rp 85.000</span>
                         </div>
                       </div>
@@ -550,7 +549,7 @@
                     <div class="row">
 
                       <div class="add-btn">
-                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
+                        <a href="{{url('/template.card')}}" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> Add To Card</a>
                       </div>
 
 
@@ -1146,7 +1145,6 @@
             <!--/.item-->
           </div><!-- /.owl-carousel #logo-slider -->
         </div><!-- /.logo-slider-inner -->
-
       </div><!-- /.logo-slider -->
       <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
     </div><!-- /.container -->

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use\App\Models\provinsi;
+
 class HomeController extends Controller
 {
 
@@ -18,5 +20,11 @@ class HomeController extends Controller
 	function showKategori()
 	{
 		return view('kategori');
+	}
+
+	function testAjax()
+	{
+		$data['list_provinsi'] = Provinsi::all();
+		return view('test-ajax', $data);
 	}
 }
