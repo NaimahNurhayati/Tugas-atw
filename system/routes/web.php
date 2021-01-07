@@ -11,6 +11,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ClientKategoriController;
 use App\Http\Controllers\ClientProdukController;
 use App\Http\Controllers\ClientPromoController;
+use App\Http\Controllers\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::get('template.login', [TemplateController::class, 'showTemplatelogin']);
 Route::get('template.chekout', [TemplateController::class, 'showChekout']);
 Route::get('template.card', [TemplateController::class, 'showCard']);
 Route::get('beranda', [HomeController::class, 'showBeranda']);
+Route::get('beranda/{status}', [HomeController::class, 'showBeranda']);
 Route::get('kategori', [HomeController::class, 'showKategori']);
 
 // produk
@@ -45,6 +47,11 @@ Route::resource('kategori', KategoriController::class);
 // promo
 Route::resource('promo', PromoController::class);
 // akhir [promo]
+
+// setting
+Route::get('setting', [SettingController::class, 'index']);
+Route::post('setting', [SettingController::class, 'store']);
+// Akhir setting
 
 // user
 Route::resource('user', UserController::class);

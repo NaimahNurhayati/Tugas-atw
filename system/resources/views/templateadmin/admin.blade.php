@@ -60,7 +60,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <script src="{{url('public')}}/assets2/js/custom.js"></script>
   <link href="{{url('public')}}/assets2/css/custom.css" rel="stylesheet">
   <!--//Metis Menu -->
-   <!-- DataTables -->
+  <!-- DataTables -->
   <link rel="stylesheet" href="{{url('public')}}/assets1/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="{{url('public')}}/assets1/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   @stack('style')
@@ -70,10 +70,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 <body class="cbp-spmenu-push">
   <div class="main-content">
     <!--left-fixed -navigation-->
-    @include('/templateadmin.section.sidebar')
+    @include('templateadmin.section.sidebar')
     <!--left-fixed -navigation-->
     <!-- header-starts -->
-    @include('/templateadmin.section.header')
+    @include('templateadmin.section.header')
     <!-- //header-ends -->
     <!-- main content start-->
     <div id="page-wrapper" style="margin-left:270px">
@@ -98,14 +98,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
   <script src="{{url('public')}}/assets1/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
   <script src="{{url('public')}}/assets1/dist/js/adminlte.min.js"></script>
-  
+
   <!-- Data Tables -->
   <script src="{{url('public')}}/assets1/plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="{{url('public')}}/assets1/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
   <script src="{{url('public')}}/assets1/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
   <script src="{{url('public')}}/assets1/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
   <script src="{{url('public')}}/assets1/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-@stack('script')
+  @stack('script')
   <script>
     $(function() {
       $("#example1").DataTable({

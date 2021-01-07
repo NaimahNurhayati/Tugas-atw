@@ -90,6 +90,12 @@
                 <label class="control-label" for="password">Password</label>
                 <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
               </div>
+              <!-- <div class="form-group">
+                <select name="login_as" class="form-control">
+                  <option value="1">Penjual</option>
+                  <option value="2">Pembeli</option>
+                </select>
+              </div> -->
               <div class="checkbox login-checkbox">
                 <label>
                   <input type="checkbox" class="i-checks"> ingatkan saya </label>

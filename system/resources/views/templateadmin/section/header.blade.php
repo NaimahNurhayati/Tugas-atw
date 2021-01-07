@@ -26,33 +26,33 @@
     <div class="profile_details">
       <ul>
         <li class="dropdown profile_details_drop">
-          <a href="{{url('logout')}}" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <div class="profile_img">
               <span class="prfil-img"><img src="{{url('public')}}/assets2/images/a.png" alt=""> </span>
               <div class="user-name">
                 <p>
                   @if(Auth::check())
                   {{request()->user()->nama}}
+                  @elseif(Auth::guard('penjual')->check())
+                  {{Auth::guard('penjual')->user()->nama}}
+                  @elseif(Auth::guard('pembeli')->check())
+                  {{Auth::guard('pembeli')->user()->nama}}
                   @else
                   Silahkan Login
                   @endif
                 </p>
-                <span>Log Out</span>
               </div>
-              <i class="fa fa-angle-down lnr"></i>
-              <i class="fa fa-angle-up lnr"></i>
               <div class="clearfix"></div>
             </div>
+            <span>
+              <a href="{{url('setting')}}" style="padding-right:5px" class="btn btn-dark"><i class="fa fa-cog"></i> Settings</a>
+              <a href="{{url('logout')}}" class="btn btn-dark"><i class="fa fa-sign-out"></i> Logout</a>
+            </span>
           </a>
-          <ul class="dropdown-menu drp-mnu">
-            <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
-            <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-            <li> <a href="{{url('logout')}}"><i class="fa fa-sign-out"></i> Logout</a> </li>
-          </ul>
         </li>
       </ul>
+      <div class="clearfix"> </div>
     </div>
     <div class="clearfix"> </div>
   </div>
-  <div class="clearfix"> </div>
 </div>
