@@ -79,19 +79,22 @@
               <div class="row">
                 <div class="form-group col-lg-12">
                   <label>Nama</label>
-                  <input type="text" placeholder="nama" title="Please enter you nama" required="" value="" name="nama" id="nama" class="form-control">
+                  @include('templateadmin.utils.errors', ['item' => 'nama'])
+                  <input type="text" placeholder="nama" title="Please enter you nama" name="nama" id="nama" class="form-control">
                 </div>
                 <div class="form-group col-lg-12">
                   <label>Username</label>
-                  <input type="text" placeholder="username" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
+                  @include('templateadmin.utils.errors', ['item' => 'username'])
+                  <input type="text" placeholder="username" title="Please enter you username" name="username" id="username" class="form-control">
                 </div>
                 <div class="form-group col-lg-6">
                   <label>Email Address</label>
-                  <input type="text" placeholder="email" title="Please enter you email" required="" value="" name="email" id="email" class="form-control">
+                  @include('templateadmin.utils.errors', ['item' => 'email'])
+                  <input type="text" placeholder="email" title="Please enter you email" name="email" id="email" class="form-control">
                 </div>
                 <div class="form-group col-lg-6">
                   <label>Password</label>
-                  <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                  <input type="password" title="Please enter your password" placeholder="******" name="password" id="password" class="form-control">
                 </div>
                 <div class="checkbox col-lg-12">
                   <input type="checkbox" class="i-checks" checked> Sigh up for our newsletter

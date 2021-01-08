@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserStoreRequest;
 use App\Models\user;
 use App\Models\penjual;
 use App\Models\pembeli;
@@ -17,38 +18,38 @@ class AuthController extends Controller
 
 	function loginProcess()
 	{
-	// 	if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
-	// 		return redirect('beranda')->with('success', 'Login Berhasil');
-	// 	} else {
-	// 		return back()->with('danger', 'Login gagal. Silahkan cek email dan password anda!');
-	// 	}
-	// }
+		// 	if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
+		// 		return redirect('beranda')->with('success', 'Login Berhasil');
+		// 	} else {
+		// 		return back()->with('danger', 'Login gagal. Silahkan cek email dan password anda!');
+		// 	}
+		// }
 
-			$email = request('email');
-			$user = Penjual::where('email', $email)->first();
-			if($user){
-				$guard = 'penjual';
+		$email = request('email');
+		$user = Penjual::where('email', $email)->first();
+		if ($user) {
+			$guard = 'penjual';
+		} else {
+			$user = Pembeli::where('email', $email)->first();
+			if ($user) {
+				$guard = 'pembeli';
 			} else {
-				$user = Pembeli::where('email', $email)->first();
-				if($user) {
-					$guard = 'pembeli';
-				}else {
-					$guard = false;
-				}
+				$guard = false;
 			}
+		}
 
-			if(!$guard) {
-				return back()->with('danger', 'Login Gagal, Email Tidak Ditemukan di Database');
-			}else {
-				if(Auth::guard($guard)->attempt(['email' =>  request('email'), 'password' => request('password')])) {
+		if (!$guard) {
+			return back()->with('danger', 'Login Gagal, Email Tidak Ditemukan di Database');
+		} else {
+			if (Auth::guard($guard)->attempt(['email' =>  request('email'), 'password' => request('password')])) {
 				return redirect('beranda/$guard')->with('success', 'Login Berhasil');
-				}else {
-					return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password');
-				}
+			} else {
+				return back()->with('danger', 'Login Gagal, Silahkan Cek Email dan Password');
 			}
-}
+		}
+	}
 
-		// digunakan apabila ada option as penjual&pembeli
+	// digunakan apabila ada option as penjual&pembeli
 	// 	if(request('login_as') == 1){
 	// 		if(Auth::guard('penjual')->attempt(['email' => request('email'), 'password' => request('password')])){
 	// 			return redirect('beranda/penjual')->with('success', 'Login Berhasil');
@@ -77,7 +78,7 @@ class AuthController extends Controller
 		return view('register');
 	}
 
-	function storeRegister()
+	function storeRegister(UserStoreRequest $request)
 	{
 		$user = new user;
 		$user->nama = request('nama');
