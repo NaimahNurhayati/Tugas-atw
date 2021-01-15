@@ -171,7 +171,8 @@
               <!-- price range -->
               <div class="range">
                 <h3 class="shopf-sear-headits-sear-head">
-                  <span>Price</span> range</h3>
+                  <span>Price</span> range
+                </h3>
                 <div class="col-md-6 mb-3">
                   <label for="validationDefault01">Min</label>
                   <input type="text" class="form-control" name="harga_min" placeholder="20000" value="{{$harga_min ?? ""}}" required>
@@ -464,8 +465,7 @@
                           <div class="product-image" style="width: 160px; height:auto; margin: 10px">
                             <div class="image">
                               <a href="{{url('template', $produk->id)}}">
-                                <img src="{{url('public')}}/assets/images/products/p1.jpg" alt="">
-                                <img src="{{url('public')}}/assets/images/products/p1_hover.jpg" alt="" class="hover-image">
+                                <img style="width: 320px" src="{{url("public/$produk->foto")}}" alt="">
                               </a>
                             </div>
                             <!-- /.image -->
@@ -499,9 +499,9 @@
             </div>
             <!-- /.tab-content -->
             <br>
-          <div class="ml-auto text-center">
-            {!! $list_produk->links() !!}
-          </div>
+            <div class="ml-auto text-center">
+              {!! $list_produk->links() !!}
+            </div>
           </div>
           <!-- /.scroll-tabs -->
           <!-- ============================================== SCROLL TABS : END ============================================== -->
@@ -516,7 +516,8 @@
                   <div class="strip strip-text">
                     <div class="strip-inner">
                       <h2 class="text-right">Amazing Sunglasses<br>
-                        <span class="shopping-needs">Get 40% off on selected items</span></h2>
+                        <span class="shopping-needs">Get 40% off on selected items</span>
+                      </h2>
                     </div>
                   </div>
                   <div class="new-label">
@@ -593,8 +594,8 @@
             </div>
             <!-- /.home-owl-carousel -->
             <div class="ml-auto text-center">
-            {!! $list_produk->links() !!}
-          </div>
+              {!! $list_produk->links() !!}
+            </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
@@ -643,8 +644,8 @@
             </div>
             <!-- /.home-owl-carousel -->
             <div class="ml-auto text-center">
-            {!! $list_produk->links() !!}
-          </div>
+              {!! $list_produk->links() !!}
+            </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== BLOG SLIDER : END ============================================== -->
@@ -691,8 +692,8 @@
             </div>
             <!-- /.home-owl-carousel -->
             <div class="ml-auto text-center">
-            {!! $list_produk->links() !!}
-          </div>
+              {!! $list_produk->links() !!}
+            </div>
           </section>
           <!-- /.section -->
           <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->

@@ -8,7 +8,7 @@ use App\Models\Traits\Relations\ProdukRelations;
 class produk extends Model
 {
 	use ProdukAttributes, ProdukRelations;
-	
+
 	protected $table = 'produk';
 
 	protected $casts = [

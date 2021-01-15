@@ -24,7 +24,7 @@ class HomeController extends Controller
 
 	function testAjax()
 	{
-		$data['list_provinsi'] = Provinsi::all();
+		$data['list_provinsi'] = provinsi::all();
 		return view('test-ajax', $data);
 	}
 }
